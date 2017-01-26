@@ -19,10 +19,13 @@ var NavBar = React.createClass({
 	render: function () {
     	return (
 			<div className='portfolio-nav-bar'>
-				<Link activeClass="active" to="home" spy={true} smooth={true} duration={500} >Home</Link>
-				<Link activeClass="active" to="portfolio" spy={true} smooth={true} duration={500} >Portfolio</Link>
-				<Link activeClass="active" to="skills" spy={true} smooth={true} duration={500} >Skills</Link>
-				<Link activeClass="active" to="contact" spy={true} smooth={true} duration={500} >Contact</Link>       
+				<div className='nav-align-right'>
+					<div className='each-nav'><Link style={{color:'white', textDecoration:'none'}} activeClass="active" to="home" spy={true} smooth={true} duration={500} ><div className='each-nav-child'>Home</div></Link></div>
+					<div className='each-nav'><Link style={{color:'white', textDecoration:'none'}} activeClass="active" to="portfolio" spy={true} smooth={true} duration={500} ><div className='each-nav-child'>Portfolio</div></Link></div>
+					<div className='each-nav'><Link style={{color:'white', textDecoration:'none'}} activeClass="active" to="skills" spy={true} smooth={true} duration={500} ><div className='each-nav-child'>Skills</div></Link></div>
+					<div className='each-nav'><Link style={{color:'white', textDecoration:'none'}} activeClass="active" to="contact" spy={true} smooth={true} duration={500} ><div className='each-nav-child'>Contact</div></Link></div>
+					<div className='each-nav'><Link style={{color:'white', textDecoration:'none'}} activeClass="active" to="resume" spy={true} smooth={true} duration={500} ><div className='each-nav-child'>Resume</div></Link></div>
+				</div>
 			</div> 
 		);
 	}
