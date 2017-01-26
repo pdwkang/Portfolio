@@ -26,6 +26,10 @@ class Code extends Component{
 		return(
 			<div>
 				<div className='sublime-header'>
+					<div className='sublime-header-title'>
+						<div className="code-example-header">CODE &nbsp; EXAMPLE</div>
+						
+					</div>
 					<div className='tabs'>
 						<Tab1 onClick={this.onClick} target={this.state.target}/>
 						<Tab2 onClick={this.onClick} target={this.state.target}/>

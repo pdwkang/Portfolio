@@ -15,7 +15,7 @@ var brc = function(text){return <span>{'{'}{text}{'}'} </span>}
 var par = function(text){return <span>{'('}{text}{')'} </span>}
 var lc = function(number){return <div className='col-sm-1 line-count'>{number}</div>};
 var numbers = []
-for(let i = 1; i < 25; i++){
+for(let i = 1; i < 29; i++){
 	numbers.push(i)
 }
 class Tab1Description extends Component{
