@@ -16,7 +16,7 @@ class Project extends Component{
 						<a target='_blank' href='http://pauldkang.com/news'><div className='project-link'>Live Demo</div></a>
 					</div>
 				</div>
-				<div className='project-description'>Upd8ted is a one-stop shop that provides the viewer with the latest business, entertainment, 
+				<div className='project-description'>Upd8ed is a one-stop shop that provides the viewer with the latest business, entertainment, 
 				global, and sports news aggegated from over 60 different news sources</div>
 				<div className='tag-wrapper'>
 					<div className='tag-header'>Tags</div>
@@ -28,13 +28,13 @@ class Project extends Component{
 					<div className='tags'>CSS3</div>
 					<div className='tags'>Node.js</div>
 					<div className='tags'>Bootstrap</div>
-					<div className='tags'>Responsive</div>
+					<div className='tags'>Responsive Design</div>
 					<div className='tags'>jQuery</div>					
 					<div className='tags'>Ajax</div>
 					<div className='tags'>Yahoo Stock API</div>
 					<div className='tags'>Weather API</div>
 					<div className='tags'>News API</div>
-					<div className='tags'>Agile</div>
+					<div className='tags'>Agile Development</div>
 				</div>
 			</div>
 		)
@@ -45,10 +45,10 @@ class Portfolio1 extends Component{
 	render(){
 		return(
 			<div>
-				<div className='col-sm-7 col-md-6 project-wrapper'>
+				<div className='col-xs-12 col-sm-7 col-md-6 project-wrapper'>
 					<Project />
 				</div>
-				<div className='col-sm-5 col-md-6 sublime-wrapper'>
+				<div className='hidden-xscol-sm-5 col-md-6 sublime-wrapper'>
 					<Code />
 				</div>
 			</div>

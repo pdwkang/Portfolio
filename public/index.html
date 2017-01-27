@@ -9,6 +9,7 @@
     <style>@import 'https://fonts.googleapis.com/css?family=Russo+One';</style>
     <style>@import 'https://fonts.googleapis.com/css?family=Source+Code+Pro';</style>
     <style>@import 'https://fonts.googleapis.com/css?family=Anton';</style>
+    <style>@import 'https://fonts.googleapis.com/css?family=Passion+One';</style>
     <!--
       Notice the use of %PUBLIC_URL% in the tag above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -21,7 +22,11 @@
     <title>React App</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+    </div>
+    <div class='canvas-wrapper'>
+          <div id='canvas'></div>
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -32,5 +37,7 @@
       To begin the development, run `npm start`.
       To create a production bundle, use `npm run build`.
     -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src='canvas-scripts.js'></script>
   </body>
 </html>

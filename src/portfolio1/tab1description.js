@@ -6,14 +6,14 @@ var cR = function(text){return <span className='sub-r'>{text}</span>};
 var cG = function(text){return <span className='sub-g'>{text}</span>};
 var cY = function(text){return <span className='sub-y'>{text}</span>};
 var cB = function(text){return <span className='sub-b'>{text}</span>};
-var cP = function(text){return <span className='sub-p'>{text}</span>};
-var sp = function(number){var returnThis
-	for(let i = 0; i < number; i++){returnThis += '<span>{&nbsp;}</span>'}
-		return returnThis;
-	}
+// var cP = function(text){return <span className='sub-p'>{text}</span>};
+// var sp = function(number){var returnThis
+// 	for(let i = 0; i < number; i++){returnThis += '<span>{&nbsp;}</span>'}
+// 		return returnThis;
+// 	}
 var brc = function(text){return <span>{'{'}{text}{'}'} </span>}
 var par = function(text){return <span>{'('}{text}{')'} </span>}
-var lc = function(number){return <div className='col-sm-1 line-count'>{number}</div>};
+// var lc = function(number){return <div className='col-sm-1 line-count'>{number}</div>};
 var numbers = []
 for(let i = 1; i < 29; i++){
 	numbers.push(i)

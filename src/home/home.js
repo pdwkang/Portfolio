@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
+import Car from './car.js'
 
 class Home extends Component{
 	render(){
 		return(
 			<div>
-				<h1>intro</h1>
-				<h2>video goes here</h2>
+				<Car />
 			</div>
 		)
 	}

@@ -4,7 +4,6 @@ class Tab2Description extends Component{
 	render(){
 		return(
 			<div>
-				tab2222
 			</div>
 		)
 	}
