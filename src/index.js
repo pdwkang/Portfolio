@@ -7,6 +7,7 @@ import Portfolio1 from './portfolio1/portfolio1.js'
 import Portfolio2 from './portfolio2/portfolio2.js'
 import Skills from './skills/skills.js'
 import Contact from './contact/contact.js'
+import contactBackground from './contact/bg-copy.png'
 class Portfolio extends Component {
 	render(){
 		return (
@@ -33,6 +34,9 @@ class Portfolio extends Component {
 				</div>
 			
 				<div id='contact' className='vh contact'>
+					<img src={contactBackground} alt='a'/>
+
+
 					<Contact />
 				</div>
 				
@@ -45,3 +49,5 @@ ReactDOM.render(
   <Portfolio />,
   document.getElementById('root')
 );
+
+					// style={{background: `url(${contactBackground}) no-repeat right center fixed`, backgroundSize: 'cover'}}>
