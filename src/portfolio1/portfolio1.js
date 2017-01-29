@@ -7,9 +7,9 @@ class Project extends Component{
 			<div>
 				<div className='upd8ed-header'>Upd<span style={{color:'#4099ff'}}>8</span>ed, News Aggregator</div>
 				
-				<div className='project-image' style={{width:'100%', margin:'auto'}}>
-					<div className='project-image-div' style={{marginLeft:'5%'}}>
-						<img src={require('./images/tv1.png')} width="90%" height='80%' alt='a'/>
+				<div className='project-image' style={{width:'90%', marginLeft:'5%'}}>
+					<div className='project-image-div'>
+						<img src={require('./images/tv1.png')} width="100%" height='100%' alt='a'/>
 					</div>
 					<div className='show-on-hover'>
 						<a target='_blank' href='https://github.com/mason0958/News-Aggregator'><div className='project-link'>GitHub</div></a>

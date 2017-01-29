@@ -7,6 +7,7 @@ class Car extends Component {
 	render(){
 		return(
 			<div className='car-wrapper'>
+				<div className='background-car'></div>
 				<div className='star'></div>
 				<div className="moon hidden-xs">
 					<div className="moon-space"></div>
@@ -528,7 +529,7 @@ class Car extends Component {
 					<div className='white-line'></div>
 				</div>
 
-				<div className='fly letterK'>P</div>
+				{/*<div className='fly letterK'>P</div>
 				<div className='fly letterA'>A</div>
 				<div className='fly letterN'>U</div>	
 				<div className='fly fly-number letterG'>L</div>
@@ -537,7 +538,7 @@ class Car extends Component {
 				<div className='fly letter3'>I</div>
 				<div className='fly letter4'>A</div>
 				<div className='fly fly-number letter5'>M</div>
-				{/*<div className='fly letter6'>L</div>
+				<div className='fly letter6'>L</div>
 				<div className='fly letter7'>I</div>
 				<div className='fly letter8'>N</div>
 				<div className='fly letter9'>G</div>*/}

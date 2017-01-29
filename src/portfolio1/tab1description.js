@@ -49,7 +49,7 @@ class Tab1Description extends Component{
 					<div>&nbsp;&nbsp;&nbsp;{'</'}{cR('Route')}{'>'}</div>
 					<div>&nbsp;&nbsp;{'</'}{cR('Router')}{'>'},</div>
 					<div> {cB("document.getElementById")}{par(cY('"root"'))}</div>
-					<div> {');'} </div>
+					<div> {');'} <span className='blinkTypeSomething'>|</span></div>
 				</div>
 			</div>
 		)

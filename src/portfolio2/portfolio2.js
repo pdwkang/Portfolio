@@ -5,7 +5,7 @@ class Portfolio2 extends Component{
 	render(){
 		return(
 			<div>
-				<div></div>
+			
 			</div>
 		)
 	}

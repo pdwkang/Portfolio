@@ -15,13 +15,15 @@ class Tab4 extends Component{
 		var backgroundColor = '#444444'
 		var borderColor = 'none'
 		var borderBottom = '1px solid white'
+		var tabClass = 'each-tab each-tab-hover'
 		if(this.props.target === 'tab4'){
 			backgroundColor = '#272822'
 			borderColor = 'lightgrey 1px solid'
-			borderBottom = '1px solid #272822'};
+			borderBottom = '1px solid #272822'
+			tabClass = 'each-tab'};
 		return(
-			<div onClick={this.onClick} className='each-tab' >
-				<div style={{borderTopLeftRadius:'20%',borderTopRightRadius:'20%',backgroundColor:backgroundColor, borderLeft: borderColor, borderRight: borderColor, borderTop: borderColor, borderBottom: borderBottom, padding:'3px 10px'}}>
+			<div onClick={this.onClick} className={tabClass} >
+				<div style={{backgroundColor:backgroundColor, borderLeft: borderColor, borderRight: borderColor, borderTop: borderColor, borderBottom: borderBottom, padding:'3px 10px'}}>
 				Stocks.js
 				</div>
 			</div>

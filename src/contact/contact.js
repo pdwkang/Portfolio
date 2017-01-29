@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-class TimeLine extends Component{
+class ContactHeader extends Component{
 	render(){
 		return(
-			<div className="time-line-wrapper">
-				
+			<div className="contact-header">
+				Contact? get in touch? info?
 			</div>
 
 		)
@@ -13,8 +13,8 @@ class TimeLine extends Component{
 class Contact extends Component{
 	render(){
 		return(
-			<div>
-				<TimeLine />
+			<div className='contact-wrapper'>
+				<ContactHeader />
 			</div>
 		)
 	}
