@@ -36,11 +36,11 @@ class Code extends Component{
 			<div>
 				<div className='sublime-header'>
 					<div className='sublime-header-title'>
-						<div className='layout-built'>
+						{/*<div className='layout-built'>
 							<span style={{color:'orange'}}>
 							 &nbsp;</span> 
-							{/*{'this'} </span> . mockTextEditor <span style={{color:'red'}}> &nbsp;{'='}&nbsp;</span>&nbsp;  {"{"} &nbsp; plugIn_used : &nbsp;<span style={{color:'#AA66CC'}}> &nbsp;{'null'}&nbsp; </span>{"}"};} */}
-						</div>
+							{'this'} </span> . mockTextEditor <span style={{color:'red'}}> &nbsp;{'='}&nbsp;</span>&nbsp;  {"{"} &nbsp; plugIn_used : &nbsp;<span style={{color:'#AA66CC'}}> &nbsp;{'null'}&nbsp; </span>{"}"};} 
+						</div>*/}
 						<div className="code-example-header">CODE &nbsp; EXAMPLE</div>
 					</div>
 					<div className='tabs'>

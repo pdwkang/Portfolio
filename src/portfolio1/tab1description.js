@@ -8,7 +8,7 @@ var cY = function(text){return <span className='sub-y'>{text}</span>};
 var cB = function(text){return <span className='sub-b'>{text}</span>};
 // var cP = function(text){return <span className='sub-p'>{text}</span>};
 // var sp = function(number){var returnThis
-// 	for(let i = 0; i < number; i++){returnThis += '<span>{&nbsp;}</span>'}
+// 	for(let i = 0; i < number; i++){returnThis += '<span>{&nbsp;&nbsp;}</span>'}
 // 		return returnThis;
 // 	}
 var brc = function(text){return <span>{'{'}{text}{'}'} </span>}
@@ -29,7 +29,7 @@ class Tab1Description extends Component{
 						)
 					})}
 				</div>
-				<div className='col-sm-11'>
+				<div className='col-sm-10 col-md-11'>
 					<div> {imporT('React, { Component } from ', '"react"')}</div>
 					<div> {imporT('$', '"jquery"')}</div>
 					<div> {imporT('App', '"./App"')}</div>
@@ -38,16 +38,16 @@ class Tab1Description extends Component{
 					...<br/>...<br/>...<br/><br/>
 
 					<div>ReactDOM.render(</div>
-					<div>&nbsp;&nbsp;{'<'}{cR('Router')} {cG('history')}{'='}{brc('hashHistory')}{'>'}</div>
-					<div>&nbsp;&nbsp;&nbsp;{'<'}{cR('Route')} {cG('component')}{'='}{brc('App')}{'>'}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('IndexRoute')} {cG('component')}{'='}{brc('General')} {'/>'}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('Route')} {cG('path')}{'='}{brc('entertainment')} {cG('component')}{'='}{brc('Entertainment')} {'/>'}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('Route')} {cG('path')}{'='}{brc('sports')} {cG('component')}{'='}{brc('Sports')}{'/>'}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('Route')} {cG('path')}{'='}{brc('business')} {cG('component')}{'='}{brc('Business')}{'/>'}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('Route')} {cG('path')}{'='}{brc('global')} {cG('component')}{'='}{brc('Global')}{'/>'}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('Route')} {cG('path')}{'='}{brc('search/:input')} {cG('component')}{'='}{brc('SearchResults')} {'/>'}</div>
-					<div>&nbsp;&nbsp;&nbsp;{'</'}{cR('Route')}{'>'}</div>
-					<div>&nbsp;&nbsp;{'</'}{cR('Router')}{'>'},</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('Router')} {cG('history')}{'='}{brc('hashHistory')}{'>'}</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('Route')} {cG('component')}{'='}{brc('App')}{'>'}</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('IndexRoute')} {cG('component')}{'='}{brc('General')} {'/>'}</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('Route')} {cG('path')}{'='}{brc('entertainment')} {cG('component')}{'='}{brc('Entertainment')} {'/>'}</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('Route')} {cG('path')}{'='}{brc('sports')} {cG('component')}{'='}{brc('Sports')}{'/>'}</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('Route')} {cG('path')}{'='}{brc('business')} {cG('component')}{'='}{brc('Business')}{'/>'}</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('Route')} {cG('path')}{'='}{brc('global')} {cG('component')}{'='}{brc('Global')}{'/>'}</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('Route')} {cG('path')}{'='}{brc('search/:input')} {cG('component')}{'='}{brc('SearchResults')} {'/>'}</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'</'}{cR('Route')}{'>'}</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;{'</'}{cR('Router')}{'>'},</div>
 					<div> {cB("document.getElementById")}{par(cY('"root"'))}</div>
 					<div> {');'} <span className='blinkTypeSomething'>|</span></div>
 				</div>

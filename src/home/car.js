@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 var Scroll = require('react-scroll')
 var Link      = Scroll.Link;
-var random = Math.floor(Math.random()*10)
-console.log(random)
+// var random = Math.floor(Math.random()*10)
 class Car extends Component {
 	render(){
 		return(

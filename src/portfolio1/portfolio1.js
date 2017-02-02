@@ -1,19 +1,22 @@
 import React, { Component } from 'react'
 import Code from './sublime.js'
-
+import Others from './others/others.js'
 class Project extends Component{
 	render(){
 		return(
 			<div>
-				<div className='upd8ed-header'>Upd<span style={{color:'#4099ff'}}>8</span>ed, News Aggregator</div>
+				<div className='upd8ed-header'>Upd<span style={{color:'#4099ff'}}>8</span>ed, News Aggregator
+					{/*<div className='featured-github-link'>
+						<a target='_blank' href='https://github.com/mason0958/News-Aggregator'><img src={require('./others/images/git.png')} alt='a'/></a>
+					</div>*/}
+				</div>
 				
-				<div className='project-image' style={{width:'90%', marginLeft:'5%'}}>
+				<div className='project-image' style={{width:'93%'}}>
 					<div className='project-image-div'>
 						<img src={require('./images/tv1.png')} width="100%" height='100%' alt='a'/>
 					</div>
 					<div className='show-on-hover'>
-						<a target='_blank' href='https://github.com/mason0958/News-Aggregator'><div className='project-link'>GitHub</div></a>
-						<a target='_blank' href='http://pauldkang.com/news'><div className='project-link'>Live Demo</div></a>
+						<a target='_blank' href='http://pauldkang.com/news'>Live Demo</a>
 					</div>
 				</div>
 				<div className='project-description'>Upd8ed is a one-stop shop that provides the viewer with the latest business, entertainment, 
@@ -44,13 +47,14 @@ class Project extends Component{
 class Portfolio1 extends Component{
 	render(){
 		return(
-			<div>
+			<div className='portfolio-page'> 
 				<div className='col-xs-12 col-sm-7 col-md-6 project-wrapper'>
 					<Project />
 				</div>
-				<div className='hidden-xscol-sm-5 col-md-6 sublime-wrapper'>
+				<div className='hidden-xs col-sm-5 col-md-6 sublime-wrapper'>
 					<Code />
 				</div>
+				<Others/>
 			</div>
 		)
 	}
