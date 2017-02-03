@@ -22,7 +22,7 @@ class MyForm extends Component {
   				</div>
   				<div className='row'>
   					<div className='col-xs-4 col-sm-3 linkz'><a target="_blank" href='https://github.com/pdwkang'><img src={require('./github.png')} alt='a' /></a></div>
-  					<div className='col-xs-4 col-sm-3 linkz'><a target="_blank" href='https://github.com/pdwkang'><img src={require('./linkedin.png')} alt='a' /></a></div>
+  					<div className='col-xs-4 col-sm-3 linkz'><a target="_blank" href='https://www.linkedin.com/in/paul-kang-373820131'><img src={require('./linkedin.png')} alt='a' /></a></div>
 				</div>
 
   			</form>			

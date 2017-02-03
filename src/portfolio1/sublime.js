@@ -41,7 +41,9 @@ class Code extends Component{
 							 &nbsp;</span> 
 							{'this'} </span> . mockTextEditor <span style={{color:'red'}}> &nbsp;{'='}&nbsp;</span>&nbsp;  {"{"} &nbsp; plugIn_used : &nbsp;<span style={{color:'#AA66CC'}}> &nbsp;{'null'}&nbsp; </span>{"}"};} 
 						</div>*/}
+
 						<div className="code-example-header">CODE &nbsp; EXAMPLE</div>
+						<div style={{padding:10.5,position:'absolute', top:0, right:0, textAlign:'right', fontSize:10, color:'rgba(255,255,255,0.7)'}}>&nbsp; PAUL KANG &copy; 2017</div>
 					</div>
 					<div className='tabs'>
 						<Tab1 onClick={this.onClick} target={this.state.target}/>
