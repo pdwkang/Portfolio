@@ -20,8 +20,8 @@ class Portfolio extends Component {
 				</div>
 {/*				<div id='about' className='about'>
 					<About />
-				</div>				
-*/}
+				</div>				*/}
+
 				<div id='skills' className='vh skills'>
 					<Skills />
 				</div>				
@@ -32,13 +32,16 @@ class Portfolio extends Component {
 							<Portfolio1 />
 						</div>
 					</div>
+					{/*	<div><Skills /></div>*/}
 					<div className='contact-tab'>
 						<div id='contact' className='contact'>							
 							<Contact />
 						</div>
-						<div className='emailz'>dwkang3403@gmail.com</div>
-						<div className='rights' id='rights'>Copyright &copy; www.pauldkang.com 2017</div>
-
+						
+						<div className='rights' id='rights'>Copyright &copy; www.pauldkang.com 2017
+							<div className='emailz'>dwkang3403@gmail.com</div>
+						</div>
+						
 					</div>
 				</div>
 
