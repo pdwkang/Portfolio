@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Code from './sublime.js'
 import Others from './others/others.js'
+
 class Project extends Component{
 	render(){
 		return(
@@ -55,6 +56,7 @@ class Portfolio1 extends Component{
 					<Code />
 				</div>
 				<Others/>
+
 			</div>
 		)
 	}

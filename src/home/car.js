@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-var Scroll = require('react-scroll')
-var Link      = Scroll.Link;
+
 // var random = Math.floor(Math.random()*10)
 class Windowz extends Component{
 	render(){
@@ -316,6 +315,7 @@ class Car extends Component {
 				<div className="road">
 					<div className="car-shadow"></div>
 					<div className='white-line'></div>
+					
 				</div>
 
 				{/*<div className='fly letterK'>P</div>
@@ -335,9 +335,9 @@ class Car extends Component {
 			<div className='intro-wrapper'>	
 				<div className='intro-header'>Paul Kan<div className='spin-g'>g</div></div>
 {/*				<div className='intro-description'>HTML,&nbsp; CSS / SASS,&nbsp; JavaScript / jQuery,&nbsp; React.js</div> */}
-				<div className='intro-description'>Full Stack Web Developer</div>
+				<div className='intro-description'>Front End Development</div>
 			</div>			
-			<Link to="portfolio" spy={true} smooth={true} duration={1000} ><div className='arrow bounce'></div></Link>
+			
 			</div>
 
 		)

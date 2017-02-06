@@ -361,6 +361,7 @@
 /* line 51, ../compass/sass/_project1.scss */
 .project-description {
   font-family: 'Libre Franklin';
+  font-weight: 900;
   font-size: 15px;
   width: 90%;
   margin: 3% 6% 3% 0;
@@ -377,12 +378,12 @@
     transform: scale(1.1);
   }
 }
-/* line 90, ../compass/sass/_project1.scss */
+/* line 91, ../compass/sass/_project1.scss */
 .tag-wrapper {
   width: 90%;
   margin: 2% 1% 2% 0;
 }
-/* line 93, ../compass/sass/_project1.scss */
+/* line 94, ../compass/sass/_project1.scss */
 .tag-wrapper .tag-header {
   font-family: 'Anton';
   font-size: 17px;
@@ -390,7 +391,7 @@
   margin-bottom: 4px;
   border-bottom: #272822 3px solid;
 }
-/* line 100, ../compass/sass/_project1.scss */
+/* line 101, ../compass/sass/_project1.scss */
 .tag-wrapper .tags {
   display: inline-block;
   border-radius: 13%;
@@ -574,7 +575,7 @@
   width: 8px;
   height: 110px;
   display: inline-block;
-  background: linear-gradient(to bottom, rgba(25, 25, 25, 0.9) 0%, black 80%);
+  background: linear-gradient(to bottom, rgba(15, 15, 15, 0.9) 0%, black 80%);
   border-top-right-radius: "6%";
   border-top-left-radius: "6%";
   border-top: 2px solid rgba(25, 25, 25, 0.8);
@@ -639,7 +640,7 @@
   height: 0;
   width: 78px;
   transform: rotate(90deg);
-  animation: blink 1s infinite linear;
+  animation: blink 5s infinite linear;
   position: absolute;
   left: -324px;
   top: -216px;
@@ -862,13 +863,13 @@
 }
 @keyframes blink {
   0% {
-    border-bottom-color: rgba(100, 150, 200, 0.5);
+    border-bottom-color: rgba(100, 150, 200, 0.3);
   }
   50% {
     border-bottom-color: rgba(100, 150, 250, 0.5);
   }
   100% {
-    border-bottom-color: rgba(100, 150, 200, 0.5);
+    border-bottom-color: rgba(100, 150, 200, 0.3);
   }
 }
 @keyframes moveUp {
@@ -945,7 +946,7 @@
   height: 12px;
   width: 100px;
   background-color: white;
-  animation: pass 1s infinite linear;
+  animation: pass 1.3s infinite linear;
 }
 
 @keyframes pass {
@@ -1168,7 +1169,7 @@
 .moon {
   position: absolute;
   border-radius: 50%;
-  background: linear-gradient(to right, rgba(241, 231, 103, 0.1) 0%, yellow 100%);
+  background: linear-gradient(to bottom, rgba(241, 231, 103, 0.1) 0%, yellow 100%);
   height: 95px;
   width: 95px;
   top: 30vh;
@@ -1413,23 +1414,23 @@
 }
 /* line 16, ../compass/sass/_arrow.scss */
 .arrow {
-  display: none;
-  bottom: 10;
-  left: 50%;
+  position: absolute;
+  bottom: 1px;
+  left: 49%;
   width: 40px;
   height: 40px;
-  background-image: url("https://cdn3.iconfinder.com/data/icons/fav-optimized-16px/512/arrow-down-download-load-file-archive-128.png");
+  opacity: .4;
+  background-image: url("../src/home/arrow.png");
   background-size: contain;
-  margin: auto;
-  z-index: 200;
+  filter: brightness(150%);
 }
 
-/* line 29, ../compass/sass/_arrow.scss */
+/* line 28, ../compass/sass/_arrow.scss */
 .arrow:hover {
   cursor: pointer;
 }
 
-/* line 32, ../compass/sass/_arrow.scss */
+/* line 31, ../compass/sass/_arrow.scss */
 .bounce {
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
@@ -1952,6 +1953,76 @@ textarea {
     height: 130px;
   }
 }
+/* line 1, ../compass/sass/_skillstable.scss */
+.skills-table-wrapper {
+  background-color: white;
+  height: 100%;
+  width: 90%;
+  margin-left: 5%;
+  font-family: "Libre Franklin";
+  font-size: 17.5px;
+  color: white;
+  padding: 0;
+}
+/* line 10, ../compass/sass/_skillstable.scss */
+.skills-table-wrapper .skills-table-header {
+  height: 20px;
+  background-color: #284938;
+  padding: 10px;
+}
+/* line 15, ../compass/sass/_skillstable.scss */
+.skills-table-wrapper .front-end {
+  background: linear-gradient(to top, #004d40 0%, #00211b 100%);
+  padding: 15px;
+  padding-top: 5px;
+  margin-right: 1.5%;
+  width: 32%;
+  display: inline-block;
+}
+/* line 25, ../compass/sass/_skillstable.scss */
+.skills-table-wrapper .back-end {
+  background: linear-gradient(to top, #1e4e7e 0%, #0a1f33 100%);
+  padding: 15px;
+  padding-top: 5px;
+  margin-right: 1.5%;
+  width: 32%;
+  display: inline-block;
+}
+/* line 34, ../compass/sass/_skillstable.scss */
+.skills-table-wrapper .in-progress {
+  background: linear-gradient(to top, #236ecb 0%, #01234c 100%);
+  padding: 15px;
+  padding-top: 5px;
+  width: 32%;
+  display: inline-block;
+}
+/* line 44, ../compass/sass/_skillstable.scss */
+.skills-table-wrapper .front-end-header {
+  padding: 10px;
+}
+/* line 47, ../compass/sass/_skillstable.scss */
+.skills-table-wrapper .back-end-header {
+  padding: 10px;
+}
+/* line 50, ../compass/sass/_skillstable.scss */
+.skills-table-wrapper .in-progress-header {
+  padding: 10px;
+}
+
+/* line 55, ../compass/sass/_skillstable.scss */
+.each-skill {
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  color: black;
+  font-weight: 900;
+  padding: 6px;
+}
+
+/* line 63, ../compass/sass/_skillstable.scss */
+.s2 {
+  background: rgba(255, 255, 255, 0.7);
+}
+
 /* line 17, ../compass/sass/compassSass.scss */
 .portfolio-nav-bar {
   background: rgba(0, 0, 0, 0.83);
@@ -2004,7 +2075,7 @@ textarea {
 /*sections*/
 /* line 63, ../compass/sass/compassSass.scss */
 .home {
-  background: linear-gradient(to bottom, #808080 70%, #ffffff 100%);
+  background: linear-gradient(to bottom, #e0e0e0 70%, #757575 100%);
   height: 100vh;
   overflow: hidden;
   padding-top: 50px;
@@ -2037,11 +2108,11 @@ textarea {
   position: absolute;
   margin: 0;
   left: 0;
-  top: 200vh;
+  top: 100vh;
   width: 100%;
   padding: 0;
 }
-/* line 98, ../compass/sass/compassSass.scss */
+/* line 99, ../compass/sass/compassSass.scss */
 #portfolio .portfolio-header {
   padding-top: 10vh;
   height: 25vh;
@@ -2050,26 +2121,26 @@ textarea {
   font-family: 'Passion One';
   text-align: center;
 }
-/* line 106, ../compass/sass/compassSass.scss */
+/* line 107, ../compass/sass/compassSass.scss */
 #portfolio .portfolio1 {
   margin-top: 17vh;
   width: 90%;
   position: relative;
   margin: auto;
 }
-/* line 113, ../compass/sass/compassSass.scss */
+/* line 114, ../compass/sass/compassSass.scss */
 #portfolio .contact-tab {
   position: relative;
   height: 100vh;
 }
-/* line 116, ../compass/sass/compassSass.scss */
+/* line 117, ../compass/sass/compassSass.scss */
 #portfolio .contact-tab .contact {
   width: 100%;
   overflow: hidden;
   height: 93vh;
 }
 
-/* line 125, ../compass/sass/compassSass.scss */
+/* line 126, ../compass/sass/compassSass.scss */
 .portrait img {
   height: 100%;
   position: fixed;
@@ -2077,7 +2148,7 @@ textarea {
   right: 0;
 }
 
-/* line 132, ../compass/sass/compassSass.scss */
+/* line 133, ../compass/sass/compassSass.scss */
 .paul {
   color: white;
   font-family: 'Libre Franklin';
@@ -2087,7 +2158,7 @@ textarea {
   left: 20px;
 }
 
-/* line 141, ../compass/sass/compassSass.scss */
+/* line 142, ../compass/sass/compassSass.scss */
 .rights {
   width: 100%;
   height: 7vh;
@@ -2101,7 +2172,7 @@ textarea {
   position: relative;
 }
 
-/* line 153, ../compass/sass/compassSass.scss */
+/* line 154, ../compass/sass/compassSass.scss */
 .emailz {
   color: white;
   width: 100%;
