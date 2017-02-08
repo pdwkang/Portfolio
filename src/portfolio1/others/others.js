@@ -13,7 +13,6 @@ class ProjectTab4 extends Component{
 						<div className='hidden-xs tags tag-small'>Bootstrap</div>
 						<div className='tags tag-small'>Ajax</div>
 						<div className='tags tag-small'>' Responsive Design '</div>
-						<div className='tags tag-small'>Agile Development</div>
 						<div className='tag-line'></div>
 						<div className='live-demo'><a href='http://www.pauldkang.com/news' target="_blank"><div>DEMO</div></a></div>
 						<a target="_blank" href='https://github.com/mason0958/News-Aggregator'><div className='github-flag'>

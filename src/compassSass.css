@@ -115,15 +115,14 @@
 }
 /* line 5, ../compass/sass/_portfolio1.scss */
 .sublime-wrapper {
-  min-height: 90vh;
-  max-height: 95vh;
+  max-height: 93vh;
   overflow: hidden;
   margin: 0;
   padding: 0;
   padding-bottom: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
-/* line 13, ../compass/sass/_portfolio1.scss */
+/* line 12, ../compass/sass/_portfolio1.scss */
 .sublime-wrapper .sublime-header {
   height: 80px;
   background-color: #171814;
@@ -132,7 +131,7 @@
   position: relative;
   z-index: 20;
 }
-/* line 20, ../compass/sass/_portfolio1.scss */
+/* line 19, ../compass/sass/_portfolio1.scss */
 .sublime-wrapper .sublime-header .sublime-header-title {
   font-family: 'Libre Franklin';
   padding-left: 23px;
@@ -141,54 +140,54 @@
   font-size: 14px;
   padding-top: 13px;
 }
-/* line 27, ../compass/sass/_portfolio1.scss */
+/* line 26, ../compass/sass/_portfolio1.scss */
 .sublime-wrapper .sublime-header .sublime-header-title .code-example-header {
   display: inline-block;
   border: 2px solid white;
   padding: 2px 5px;
   margin-right: 5px;
 }
-/* line 34, ../compass/sass/_portfolio1.scss */
+/* line 33, ../compass/sass/_portfolio1.scss */
 .sublime-wrapper .sublime-header .sublime-header-title .layout-built {
   margin-top: 2px;
   font-size: 14px;
   padding-bottom: 5px;
   color: white;
 }
-/* line 41, ../compass/sass/_portfolio1.scss */
+/* line 40, ../compass/sass/_portfolio1.scss */
 .sublime-wrapper .sublime-header .tabs {
   position: absolute;
   bottom: -1px;
   left: 20px;
 }
-/* line 45, ../compass/sass/_portfolio1.scss */
+/* line 44, ../compass/sass/_portfolio1.scss */
 .sublime-wrapper .sublime-header .tabs .each-tab {
   margin: 3px;
   color: white;
   display: inline-block;
   margin-bottom: 0;
 }
-/* line 52, ../compass/sass/_portfolio1.scss */
+/* line 51, ../compass/sass/_portfolio1.scss */
 .sublime-wrapper .sublime-header .tabs .each-tab-hover:hover {
   color: white;
   opacity: .3;
   border-bottom: none;
 }
-/* line 58, ../compass/sass/_portfolio1.scss */
+/* line 57, ../compass/sass/_portfolio1.scss */
 .sublime-wrapper .sublime-header .tabs:hover {
   cursor: pointer;
 }
-/* line 63, ../compass/sass/_portfolio1.scss */
+/* line 62, ../compass/sass/_portfolio1.scss */
 .sublime-wrapper .sublime-body {
   display: none;
 }
 
-/* line 69, ../compass/sass/_portfolio1.scss */
+/* line 68, ../compass/sass/_portfolio1.scss */
 .sublime-active .each-tab {
   background-color: white;
 }
 
-/* line 75, ../compass/sass/_portfolio1.scss */
+/* line 74, ../compass/sass/_portfolio1.scss */
 .sublime-body-animation {
   animation: sublime-animation .9s linear;
   border-top: 1px solid white;
@@ -199,7 +198,6 @@
   margin: 0;
   color: white;
   padding-top: 7px;
-  padding-bottom: 20px;
 }
 
 @keyframes sublime-animation {
@@ -224,7 +222,7 @@
     margin-top: 0;
   }
 }
-/* line 115, ../compass/sass/_portfolio1.scss */
+/* line 113, ../compass/sass/_portfolio1.scss */
 .blinkTypeSomething {
   font-family: arial;
   animation: blink-type-something 4s steps(10) infinite;
@@ -1736,21 +1734,17 @@ textarea {
 
 /* line 1, ../compass/sass/_others.scss */
 .projects-wrapper {
-  width: 91vw;
+  width: 81vw;
 }
 /* line 3, ../compass/sass/_others.scss */
 .projects-wrapper .projects-image-wrapper {
   padding: 0;
   margin: 0;
 }
-/* line 4, ../compass/sass/_others.scss */
-.projects-wrapper .projects-image-wrapper .portfolio-mid-line {
-  margin-top: 30px;
-}
 /* line 11, ../compass/sass/_others.scss */
 .projects-wrapper .projects-image-wrapper .each-projects-image {
   padding: 2%;
-  margin-top: 60px;
+  margin-top: 40px;
   padding-left: 4px;
 }
 /* line 15, ../compass/sass/_others.scss */
@@ -1820,7 +1814,7 @@ textarea {
 }
 /* line 80, ../compass/sass/_others.scss */
 .projects-wrapper .projects-image-wrapper .each-projects-image .each-project-overflow .each-project-tags .tag-wrapper .github-flag img {
-  width: 100px;
+  width: 70px;
   height: 0;
   opacity: 1;
   filter: brightness(70%);
@@ -1873,7 +1867,7 @@ textarea {
 }
 /* line 133, ../compass/sass/_others.scss */
 .projects-wrapper .projects-image-wrapper .each-projects-image:hover .each-project-tags .tag-wrapper .github-flag img {
-  width: 100px;
+  width: 90px;
   height: 100%;
   opacity: 1;
   filter: brightness(70%);
@@ -1949,7 +1943,7 @@ textarea {
     height: 0;
   }
   80% {
-    width: 100px;
+    width: 90px;
     height: 130px;
   }
 }
@@ -1957,8 +1951,8 @@ textarea {
 .skills-table-wrapper {
   background-color: white;
   height: 100%;
-  width: 90%;
-  margin-left: 5%;
+  width: 80%;
+  margin-left: 10%;
   font-family: "Libre Franklin";
   font-size: 17.5px;
   color: white;
@@ -2025,45 +2019,53 @@ textarea {
 
 /* line 17, ../compass/sass/compassSass.scss */
 .portfolio-nav-bar {
-  background: rgba(0, 0, 0, 0.83);
+  background-color: none;
   position: relative;
   z-index: 9999;
   height: 50px;
   width: 100%;
   position: fixed;
 }
-/* line 24, ../compass/sass/compassSass.scss */
+/* line 25, ../compass/sass/compassSass.scss */
 .portfolio-nav-bar .nav-align-right {
   position: absolute;
   right: 0;
 }
-/* line 27, ../compass/sass/compassSass.scss */
+/* line 28, ../compass/sass/compassSass.scss */
 .portfolio-nav-bar .nav-align-right .each-nav {
   display: inline-block;
   width: 11vw;
   line-height: 50px;
-  text-align: center;
+  text-align: right;
 }
-/* line 32, ../compass/sass/compassSass.scss */
+/* line 33, ../compass/sass/compassSass.scss */
 .portfolio-nav-bar .nav-align-right .each-nav .each-nav-child {
   font-size: 16px;
   font-family: 'Libre Franklin';
 }
-/* line 37, ../compass/sass/compassSass.scss */
+/* line 38, ../compass/sass/compassSass.scss */
 .portfolio-nav-bar .nav-align-right .each-nav:hover {
   cursor: pointer;
   background-color: black;
 }
 
-/* line 45, ../compass/sass/compassSass.scss */
-.active .each-nav-child {
-  background-color: #4099ff;
-  color: black;
-  font-size: 23px;
-  height: 50px;
+/* line 44, ../compass/sass/compassSass.scss */
+.container {
+  width: 100%;
+  background-color: none !important;
+}
+
+/* line 49, ../compass/sass/compassSass.scss */
+.navbar-collapse {
+  background-color: none !important;
 }
 
 /* line 53, ../compass/sass/compassSass.scss */
+.active .each-nav-child {
+  color: white;
+}
+
+/* line 66, ../compass/sass/compassSass.scss */
 .vh {
   position: absolute;
   margin: 0;
@@ -2073,7 +2075,7 @@ textarea {
 }
 
 /*sections*/
-/* line 63, ../compass/sass/compassSass.scss */
+/* line 76, ../compass/sass/compassSass.scss */
 .home {
   background: linear-gradient(to bottom, #e0e0e0 70%, #757575 100%);
   height: 100vh;
@@ -2081,7 +2083,7 @@ textarea {
   padding-top: 50px;
 }
 
-/* line 69, ../compass/sass/compassSass.scss */
+/* line 82, ../compass/sass/compassSass.scss */
 .about {
   top: 100vh;
   width: 100%;
@@ -2089,7 +2091,7 @@ textarea {
   height: 100vh;
 }
 
-/* line 77, ../compass/sass/compassSass.scss */
+/* line 90, ../compass/sass/compassSass.scss */
 .skills {
   margin: 0;
   left: 0;
@@ -2098,12 +2100,12 @@ textarea {
   overflow: hidden;
 }
 
-/* line 87, ../compass/sass/compassSass.scss */
+/* line 100, ../compass/sass/compassSass.scss */
 .portfolio-background {
   background: white;
 }
 
-/* line 91, ../compass/sass/compassSass.scss */
+/* line 117, ../compass/sass/compassSass.scss */
 #portfolio {
   position: absolute;
   margin: 0;
@@ -2112,7 +2114,7 @@ textarea {
   width: 100%;
   padding: 0;
 }
-/* line 99, ../compass/sass/compassSass.scss */
+/* line 125, ../compass/sass/compassSass.scss */
 #portfolio .portfolio-header {
   padding-top: 10vh;
   height: 25vh;
@@ -2121,26 +2123,26 @@ textarea {
   font-family: 'Passion One';
   text-align: center;
 }
-/* line 107, ../compass/sass/compassSass.scss */
+/* line 133, ../compass/sass/compassSass.scss */
 #portfolio .portfolio1 {
   margin-top: 17vh;
-  width: 90%;
+  width: 80%;
   position: relative;
   margin: auto;
 }
-/* line 114, ../compass/sass/compassSass.scss */
+/* line 140, ../compass/sass/compassSass.scss */
 #portfolio .contact-tab {
   position: relative;
   height: 100vh;
 }
-/* line 117, ../compass/sass/compassSass.scss */
+/* line 143, ../compass/sass/compassSass.scss */
 #portfolio .contact-tab .contact {
   width: 100%;
   overflow: hidden;
   height: 93vh;
 }
 
-/* line 126, ../compass/sass/compassSass.scss */
+/* line 152, ../compass/sass/compassSass.scss */
 .portrait img {
   height: 100%;
   position: fixed;
@@ -2148,7 +2150,7 @@ textarea {
   right: 0;
 }
 
-/* line 133, ../compass/sass/compassSass.scss */
+/* line 159, ../compass/sass/compassSass.scss */
 .paul {
   color: white;
   font-family: 'Libre Franklin';
@@ -2158,7 +2160,7 @@ textarea {
   left: 20px;
 }
 
-/* line 142, ../compass/sass/compassSass.scss */
+/* line 168, ../compass/sass/compassSass.scss */
 .rights {
   width: 100%;
   height: 7vh;
@@ -2172,7 +2174,7 @@ textarea {
   position: relative;
 }
 
-/* line 154, ../compass/sass/compassSass.scss */
+/* line 180, ../compass/sass/compassSass.scss */
 .emailz {
   color: white;
   width: 100%;
