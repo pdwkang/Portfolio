@@ -28,9 +28,11 @@ class Portfolio extends Component {
 				</div>		*/}		
 				<div id='portfolio'>
 					<div className='portfolio-background'>
-						<div className='portfolio-header'>Portfolio</div>
+
 						<div id='portfolio1' className='portfolio1'>
+						
 							<Portfolio1 />
+							<div style={{position:'absolute', right:0, top:0, width:'40%', height:50, backgroundColor:'#171814', zIndex:2}}></div>
 						</div>
 					</div>
 					<div style={{width:'100%', height:'100%', backgroundColor:'white'}}>

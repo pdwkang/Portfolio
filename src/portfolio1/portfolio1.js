@@ -1,65 +1,162 @@
 import React, { Component } from 'react'
-import Code from './sublime.js'
-import Others from './others/others.js'
+import Portfolio1z from './project1z.js'
+import Portfolio2z from './project2/project2z.js'
+import Portfolio3z from './project3/project3z.js'
+import Portfolio4z from './project4/project4z.js'
 
-class Project extends Component{
+
+class ProjectTitle1 extends Component{
+	constructor(props) {
+		super(props);
+		this.onClick = this.onClick.bind(this);	
+	}
+	onClick(){
+		this.props.onClick(<Portfolio1z />, 'tab1')
+	}
 	render(){
+		var selectedTab = 'tab-wrapper'
+		if(this.props.target === 'tab1'){
+			selectedTab = 'selected-tab'
+		}
+
 		return(
-			<div>
-				<div className='upd8ed-header'>Upd<span style={{color:'#4099ff'}}>8</span>ed, News Aggregator
-					{/*<div className='featured-github-link'>
-						<a target='_blank' href='https://github.com/mason0958/News-Aggregator'><img src={require('./others/images/git.png')} alt='a'/></a>
-					</div>*/}
-				</div>
-				
-				<div className='project-image' style={{width:'93%'}}>
-					<div className='project-image-div'>
-						<img src={require('./images/tv1.png')} width="100%" height='100%' alt='a'/>
-					</div>
-					<div className='show-on-hover'>
-						<a target='_blank' href='http://pauldkang.com/news'>Live Demo</a>
-					</div>
-				</div>
-				<div className='project-description'>Upd8ed is a one-stop shop that provides the viewer with the latest business, entertainment, 
-				global, and sports news aggegated from over 60 different news sources</div>
-				<div className='tag-wrapper'>
-					<div className='tag-header'>Tags</div>
-					<div className='featured tags'>React.js</div>
-					<div className='featured tags'>React-Router</div>
-					<div className='featured tags'>NPM</div>
-					<div className='tags'>JavaScript</div>
-					<div className='tags'>HTML5</div>
-					<div className='tags'>CSS3</div>
-					<div className='tags'>Node.js</div>
-					<div className='tags'>Bootstrap</div>
-					<div className='tags'>Responsive Design</div>
-					<div className='tags'>jQuery</div>					
-					<div className='tags'>Ajax</div>
-					<div className='tags'>Yahoo Stock API</div>
-					<div className='tags'>Weather API</div>
-					<div className='tags'>News API</div>
-					<div className='tags'>Agile Development</div>
-				</div>
+			<div onClick={this.onClick} className={selectedTab}>
+				<div className='tab-triangle'></div>
+				<div className='project-arrow-tab'>Upd8ed</div>
 			</div>
 		)
 	}
 }
+
+class ProjectTitle2 extends Component{
+	constructor(props) {
+		super(props);
+		this.onClick = this.onClick.bind(this);	
+
+	}
+	onClick(){
+		this.props.onClick(<Portfolio2z />, 'tab2')
+	}
+
+	render(){
+		var selectedTab = 'tab-wrapper'
+		if(this.props.target === 'tab2'){
+			selectedTab = 'selected-tab'
+		}
+
+		return(
+			<div onClick={this.onClick} className={selectedTab}>
+				<div className='tab-triangle'></div>
+				<div className='project-arrow-tab'>Eating Nemo</div>
+
+			</div>
+		)
+	}
+}
+
+class ProjectTitle3 extends Component{
+	constructor(props) {
+		super(props);
+		this.onClick = this.onClick.bind(this);	
+
+	}
+	onClick(){
+		this.props.onClick(<Portfolio3z />, 'tab3')
+	}
+
+	render(){
+		var selectedTab = 'tab-wrapper'
+		if(this.props.target === 'tab3'){
+			selectedTab = 'selected-tab'
+		}
+
+		return(
+			<div onClick={this.onClick} className={selectedTab}>
+				<div className='tab-triangle'></div>
+				<div className='project-arrow-tab'>Movie App</div>
+
+			</div>
+		)
+	}
+}
+
+class ProjectTitle4 extends Component{
+	constructor(props) {
+		super(props);
+		this.onClick = this.onClick.bind(this);	
+
+	}
+	onClick(){
+		this.props.onClick(<Portfolio4z />, 'tab4')
+	}
+
+	render(){
+		var selectedTab = 'tab-wrapper'
+		if(this.props.target === 'tab4'){
+			selectedTab = 'selected-tab'
+		}
+
+		return(
+			<div onClick={this.onClick} className={selectedTab}>
+				<div className='tab-triangle'></div>
+				<div className='project-arrow-tab'>Black Jack</div>
+
+			</div>
+		)
+	}
+}
+
+class ProjectTitle5 extends Component{
+	render(){
+		return(
+			<div className='tab-wrapper'>
+				<div className='tab-triangle'></div>
+				<div className='project-arrow-tab'>coming soon</div>
+			</div>
+		)
+	}
+}
+
+
 
 class Portfolio1 extends Component{
+	constructor(props) {
+		super(props);
+		this.state = {
+			projectDescription: <Portfolio1z />,
+			projectTarget: 'tab1',
+		}
+		this.onClick = this.onClick.bind(this)
+	}
+	onClick(projectDescription, projectTarget){
+		this.setState({
+			projectDescription:projectDescription,
+			projectTarget:projectTarget
+		})
+	}
 	render(){
-		return(
-			<div className='portfolio-page'> 
-				<div className='col-xs-12 col-sm-7 col-md-6 project-wrapper'>
-					<Project />
-				</div>
-				<div className='hidden-xs col-sm-5 col-md-6 sublime-wrapper'>
-					<Code />
-				</div>
-				<Others/>
+		return( 
+			<div>
+				<div className='project-titles'>
+					<div className='project-titles-header'>Projects</div>
+					<ProjectTitle1 onClick={this.onClick} target={this.state.projectTarget}/>
+					<ProjectTitle2 onClick={this.onClick} target={this.state.projectTarget}/>
+					<ProjectTitle3 onClick={this.onClick} target={this.state.projectTarget}/>
+					<ProjectTitle4 onClick={this.onClick} target={this.state.projectTarget}/>
+					<ProjectTitle5/>
+					<ProjectTitle5/>
 
+				</div>
+				{this.state.projectDescription}
 			</div>
 		)
 	}
 }
 
+
+
 export default Portfolio1
+
+					
+					// <ProjectTitle3 onClick={this.onClick} target={this.state.target}/>
+					// <ProjectTitle4 onClick={this.onClick} target={this.state.target}/>
