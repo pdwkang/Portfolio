@@ -35,15 +35,10 @@ class Code extends Component{
 		return(
 			<div>
 				<div className='sublime-header'>
-					<div className='sublime-header-title'>
-						{/*<div className='layout-built'>
-							<span style={{color:'orange'}}>
-							 &nbsp;</span> 
-							{'this'} </span> . mockTextEditor <span style={{color:'red'}}> &nbsp;{'='}&nbsp;</span>&nbsp;  {"{"} &nbsp; plugIn_used : &nbsp;<span style={{color:'#AA66CC'}}> &nbsp;{'null'}&nbsp; </span>{"}"};} 
-						</div>*/}
-
-						<div className="code-example-header">CODE &nbsp; EXAMPLE</div>
-						<div style={{padding:10.5,position:'absolute', top:0, right:0, textAlign:'right', fontSize:10, color:'rgba(255,255,255,0.7)'}}>&nbsp; PAUL KANG &copy; 2017</div>
+					<div className='project-titles-header2'>
+						<div className='project-title-left-top2'></div>
+						Code
+						<div className='project-title-bottom-right2'></div>
 					</div>
 					<div className='tabs'>
 						<Tab1 onClick={this.onClick} target={this.state.target}/>
@@ -54,6 +49,7 @@ class Code extends Component{
 					</div>
 				</div>
 				<div className={this.state.descriptionClass}>
+				<div style={{position:'absolute', right:0, top:0, width:'100%', height:75, backgroundColor:'#171814', zIndex:2}}></div>
 					{this.state.tab}
 				</div>
 			</div>

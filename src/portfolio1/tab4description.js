@@ -33,7 +33,7 @@ class Tab4Description extends Component{
 				<div className='col-sm-11'>
 					<div> {imporT('React, { Component } from ', '"react"')}</div>
 					<div> {imporT('SearchResult', '"./Search.js"')}</div>
-					...<br/>...<br/>...<br/><br/>
+					...<br/>...<br/>...<br/><br/><br/><br/>
 					<div>{cB('class')} StockSearch {cR('extends')} Component {'{'}</div>
 					<div>&nbsp;&nbsp;{'constructor(props) { '}</div>
 					<div>&nbsp;&nbsp;&nbsp;&nbsp;{cO('super')}{'(props);'}</div>
@@ -43,6 +43,13 @@ class Tab4Description extends Component{
 					<div>&nbsp;&nbsp;{'};'}</div>
 					<div>&nbsp;&nbsp;{'componentDidMount(){'}</div>
 					<div>&nbsp;&nbsp;&nbsp;&nbsp;{'$.'}{cB('getJSON')}{'(stockUrl, ('}{cO('stockData')}{')'} {cB('=>')} {'{'}</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;{cO('this')}{'.setState({stock: stockData})'}</div>
+					<div>&nbsp;&nbsp;{'});'}</div>
+					<div>&nbsp;&nbsp;{'render(){'}</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;{cR('return')}{'('}</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('Search')} {cG('stock')} {'= {'}{cO('this')}{'.state.stock} />'}</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;{')'}</div>
+					<div>&nbsp;&nbsp;{'};'}</div>
 					<div>{'};'}</div>
 					<br/>
 					<div>{cR('export default')} StockSearch; <span className='blinkTypeSomething'>|</span></div>

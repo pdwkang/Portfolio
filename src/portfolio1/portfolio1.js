@@ -3,7 +3,7 @@ import Portfolio1z from './project1z.js'
 import Portfolio2z from './project2/project2z.js'
 import Portfolio3z from './project3/project3z.js'
 import Portfolio4z from './project4/project4z.js'
-
+import Others from './others/others.js'
 
 class ProjectTitle1 extends Component{
 	constructor(props) {
@@ -137,18 +137,27 @@ class Portfolio1 extends Component{
 	render(){
 		return( 
 			<div>
-				<div className='project-titles'>
-					<div className='project-titles-header'>Projects</div>
-					<ProjectTitle1 onClick={this.onClick} target={this.state.projectTarget}/>
-					<ProjectTitle2 onClick={this.onClick} target={this.state.projectTarget}/>
-					<ProjectTitle3 onClick={this.onClick} target={this.state.projectTarget}/>
-					<ProjectTitle4 onClick={this.onClick} target={this.state.projectTarget}/>
-					<ProjectTitle5/>
-					<ProjectTitle5/>
+				<div className='hidden-xs'>
+					<div className='project-titles'>
+						<div className='project-titles-header'>
+							<div className='project-title-left-top'></div>
+							Projects
+							<div className='project-title-bottom-right'></div>
+						</div>
+						<ProjectTitle1 onClick={this.onClick} target={this.state.projectTarget}/>
+						<ProjectTitle2 onClick={this.onClick} target={this.state.projectTarget}/>
+						<ProjectTitle3 onClick={this.onClick} target={this.state.projectTarget}/>
+						<ProjectTitle4 onClick={this.onClick} target={this.state.projectTarget}/>
+						<ProjectTitle5/>
+						<ProjectTitle5/>
 
+					</div>
+					{this.state.projectDescription}
 				</div>
-				{this.state.projectDescription}
-			</div>
+				<div className='visible-xs' style={{marginLeft:'10%'}}>
+					<Others />
+				</div>
+			</div>			
 		)
 	}
 }

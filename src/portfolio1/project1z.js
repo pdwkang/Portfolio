@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Code from './sublime.js'
 
+
 class Project extends Component{
 	render(){
 		return(
@@ -11,15 +12,21 @@ class Project extends Component{
 					</div>*/}
 				</div>
 				
-				<div className='project-image' style={{width:'93%'}}>
+				<div className='project-image' style={{width:'93%', position:'relative'}}>
 					<div className='project-image-div'>
+						<a className='laptop-screen-project' target="_blank" href='http://www.pauldkang.com/news'>
 						<img src={require('./images/tv1.png')} width="100%" height='100%' alt='a'/>
-					</div>
-					<div className='show-on-hover'>
-						<a target='_blank' href='http://pauldkang.com/news'>Live Demo</a>
+						<div className='show-me-on-hover'>Visit Website</div>
+						</a>
+
+						<div className='github-main' style={{position:'absolute', top:-16, right:10, width:90, zIndex:999}}>	
+							<a target="_blank" href='https://github.com/mason0958/News-Aggregator'>
+								<img style={{width:'100%'}} alt='a' src={require('./others/images/github.png')} />
+							</a>
+						</div>
 					</div>
 				</div>
-				<div className='project-description'>Upd8ed is a one-stop shop that provides the viewer with the latest business, entertainment, 
+				<div className='project-description'><i>Upd8ed</i> is a one-stop shop that provides the viewer with the latest business, entertainment, 
 				global, and sports news aggegated from over 60 different news sources</div>
 				<div className='tag-wrapper'>
 					<div className='tag-header'>Tags</div>
@@ -47,14 +54,14 @@ class Project extends Component{
 class Portfolio1z extends Component{
 	render(){
 		return(
-			<div className='portfolio-page'> 
-				<div className='col-xs-12 col-sm-7 col-md-6 project-wrapper'>
-					<Project />
-				</div>
-				<div className='hidden-xs col-sm-5 col-md-6 sublime-wrapper'>
-					<Code />
-				</div>
-			</div>
+				<div className='portfolio-page'> 
+					<div className='hidden-xs col-sm-6 col-md-6 project-wrapper'>
+						<Project />
+					</div>
+					<div className='hidden-xs col-sm-6 col-md-6 sublime-wrapper'>
+						<Code />
+					</div>
+				</div>		
 		)
 	}
 }

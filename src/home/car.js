@@ -1,6 +1,20 @@
 import React, { Component } from 'react'
 
 // var random = Math.floor(Math.random()*10)
+// class Treez extends Component{
+// 	render(){
+// 		return(
+// 			<div>
+// 					<div className="tree">
+// 						<div className="tree-sm tr1"></div>
+// 						<div className="tree-sm tr2"></div>
+// 						<div className="tree-sm tr3"></div>
+// 						<div className="tree-sm tr4"></div>
+// 					</div>					
+// 			</div>
+// 		)
+// 	}
+// }
 class Windowz extends Component{
 	render(){
 		return(
@@ -204,7 +218,7 @@ class BuildingSet extends Component{
 					</div>								
 
 					<div className='baby-sky-scraper' style={{height:150}}></div>					
-
+					
 				</div>
 
 		)
@@ -244,6 +258,7 @@ class Car extends Component {
 					</div>							
 				</div>
 				<div className='sky-scraper-wrapper'>
+					<BuildingSet/>
 					<BuildingSet/>
 					<BuildingSet/>
 					<BuildingSet/>
@@ -335,7 +350,7 @@ class Car extends Component {
 			<div className='intro-wrapper'>	
 				<div className='intro-header'>Paul Kan<div className='spin-g'>g</div></div>
 {/*				<div className='intro-description'>HTML,&nbsp; CSS / SASS,&nbsp; JavaScript / jQuery,&nbsp; React.js</div> */}
-				<div className='intro-description'>Front End Development</div>
+				<div className='intro-description'>Front End Developer</div>
 			</div>			
 			
 			</div>

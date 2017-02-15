@@ -6,7 +6,9 @@ var cR = function(text){return <span className='sub-r'>{text}</span>};
 var cG = function(text){return <span className='sub-g'>{text}</span>};
 var cY = function(text){return <span className='sub-y'>{text}</span>};
 var cB = function(text){return <span className='sub-b'>{text}</span>};
-// var cP = function(text){return <span className='sub-p'>{text}</span>};
+var cGR = function(text){return <span className='sub-gr'>{text}</span>};
+var cP = function(text){return <span className='sub-p'>{text}</span>};
+var cO = function(text){return <span className='sub-o'>{text}</span>};
 // var sp = function(number){var returnThis
 // 	for(let i = 0; i < number; i++){returnThis += '<span>{&nbsp;&nbsp;}</span>'}
 // 		return returnThis;
@@ -15,7 +17,7 @@ var brc = function(text){return <span>{'{'}{text}{'}'} </span>}
 var par = function(text){return <span>{'('}{text}{')'} </span>}
 // var lc = function(number){return <div className='col-sm-1 line-count'>{number}</div>};
 var numbers = []
-for(let i = 1; i < 29; i++){
+for(let i = 1; i < 35; i++){
 	numbers.push(i)
 }
 class Tab1Description extends Component{
@@ -30,26 +32,35 @@ class Tab1Description extends Component{
 					})}
 				</div>
 				<div className='col-sm-10 col-md-11'>
-					<div> {imporT('React, { Component } from ', '"react"')}</div>
-					<div> {imporT('$', '"jquery"')}</div>
-					<div> {imporT('App', '"./App"')}</div>
-					<div> {imporT('Business', '"./business/Business.js"')}</div>
-					<div> {imporT('{ Router,Route,hasHistory,IndexRoute }', '"react-router"')}</div>
-					...<br/>...<br/>...<br/><br/>
-
-					<div>ReactDOM.render(</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('Router')} {cG('history')}{'='}{brc('hashHistory')}{'>'}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('Route')} {cG('component')}{'='}{brc('App')}{'>'}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('IndexRoute')} {cG('component')}{'='}{brc('General')} {'/>'}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('Route')} {cG('path')}{'='}{brc('entertainment')} {cG('component')}{'='}{brc('Entertainment')} {'/>'}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('Route')} {cG('path')}{'='}{brc('sports')} {cG('component')}{'='}{brc('Sports')}{'/>'}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('Route')} {cG('path')}{'='}{brc('business')} {cG('component')}{'='}{brc('Business')}{'/>'}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('Route')} {cG('path')}{'='}{brc('global')} {cG('component')}{'='}{brc('Global')}{'/>'}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('Route')} {cG('path')}{'='}{brc('search/:input')} {cG('component')}{'='}{brc('SearchResults')} {'/>'}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'</'}{cR('Route')}{'>'}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;{'</'}{cR('Router')}{'>'},</div>
-					<div> {cB("document.getElementById")}{par(cY('"root"'))}</div>
-					<div> {');'} <span className='blinkTypeSomething'>|</span></div>
+					
+					<div>{cB('const')} apiKey {cR('=')} {cY('"1234567890ASDFGHJKL"')};</div>						
+					<div>{cB('var')} apiBaseUrl {cR('=')} {cY('"http://api.themoviedb.....api_key="')};</div>
+					<div>{cB('var')} movieUrl{cR('=')} apiBaseUrl {cR('+')} apiKey;</div>
+					<br/>
+					<div> {cGR('// Callback Hell')} </div>
+					<div>{cR('$')}({cB('document')}{'.ready('}{cB('function')}{'(){'}</div>
+					<div>&nbsp;&nbsp;{'$.'}{cB('getJSON')}{'(movieUrl, ('}{cO('movieData')}{')'} {cB('=>')} {'{'}</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;{cB('var')} movieHTML {cR('=')} {cY("''")}</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;{cR('for')} ({cB('var')} i {cR('=')} {cB('0')}; i {cB('<')} {'movieData.results.length'}; i{cB('++')}{'{'}</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{cB('var')} movieId {cR('=')} {'movieData.results[i].id'} </div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{cB('var')} trailerUrl {cR('=')} movieUrl + {cY('"movie/')} + movieId </div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'$.'}{cB('getJSON')}{'(trailerUrl, ('}{cO('trailerData')}{')'} {cB('=>')} {'{'}</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{cB('var')} creditsId {cR('=')} {'trailerData.results[i].id'} </div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{cB('var')} creditsUrl {cR('=')} movieUrl + {cY('"credits/')} + creditsId </div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'$.'}{cB('getJSON')}{'(creditsUrl, ('}{cO('creditsData')}{')'} {cB('=>')} {'{'}</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...</div>
+					<br/>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...</div>
+					<br/>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'});'} </div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'});'} </div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;{'}'}</div>
+					<div>&nbsp;&nbsp;{'});'} </div>
+					<div>{'});'} <span className='blinkTypeSomething'>|</span></div>					
 				</div>
 			</div>
 		)

@@ -33,7 +33,9 @@ class Tab3Description extends Component{
 				<div className='col-sm-11'>
 					<div> {imporT('React, { Component } from ', '"react"')}</div>
 					<div> {imporT('StockSearch', '"./Stocks.js"')}</div>
-					...<br/>...<br/>...<br/><br/>
+					...<br/>...<br/>...<br/><br/><br/><br/>
+
+					...<br/>...<br/>...<br/>
 					<div>{cB('class')} Business {cR('extends')} Component {'{'}</div>
 					<div>&nbsp;&nbsp;{'render(){'}</div>
 					<div>&nbsp;&nbsp;&nbsp;&nbsp;{cR('return')}{'('}</div>
@@ -42,6 +44,7 @@ class Tab3Description extends Component{
 					<div>&nbsp;&nbsp;{'};'}</div>
 					<div>{'};'}</div>
 					<br/>
+
 					<div>{cR('export default')} Business; <span className='blinkTypeSomething'>|</span></div>
 				</div>
 			</div>
