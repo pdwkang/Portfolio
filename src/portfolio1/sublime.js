@@ -37,7 +37,7 @@ class Code extends Component{
 				<div className='sublime-header'>
 					<div className='project-titles-header2'>
 						<div className='project-title-left-top2'></div>
-						Code
+						Code Example 
 						<div className='project-title-bottom-right2'></div>
 					</div>
 					<div className='tabs'>

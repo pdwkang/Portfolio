@@ -31,7 +31,7 @@ class Tab1Description extends Component{
 					})}
 				</div>
 				<div className='col-sm-10 col-md-11'>
-					<div> {cGR('// Code mock-linting in progress')} </div>
+					<div> {cGR('// Mock-editor code in progress')} </div>
 				</div>
 			</div>
 		)

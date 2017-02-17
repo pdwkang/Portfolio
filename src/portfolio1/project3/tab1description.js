@@ -38,7 +38,7 @@ class Tab1Description extends Component{
 					<div>{cB('var')} movieUrl{cR('=')} apiBaseUrl {cR('+')} apiKey;</div>
 					<br/>
 					<div> {cGR('// Callback Hell')} </div>
-					<div>{cR('$')}({cB('document')}{'.ready('}{cB('function')}{'(){'}</div>
+					<div>{cR('$')}({cB('document')}{').ready('}{cB('function')}{'(){'}</div>
 					<div>&nbsp;&nbsp;{'$.'}{cB('getJSON')}{'(movieUrl, ('}{cO('movieData')}{')'} {cB('=>')} {'{'}</div>
 					<div>&nbsp;&nbsp;&nbsp;&nbsp;{cB('var')} movieHTML {cR('=')} {cY("''")}</div>
 					<div>&nbsp;&nbsp;&nbsp;&nbsp;{cR('for')} ({cB('var')} i {cR('=')} {cB('0')}; i {cB('<')} {'movieData.results.length'}; i{cB('++')}{'{'}</div>

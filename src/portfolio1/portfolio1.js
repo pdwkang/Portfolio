@@ -144,6 +144,7 @@ class Portfolio1 extends Component{
 							Projects
 							<div className='project-title-bottom-right'></div>
 						</div>
+						<br/>
 						<ProjectTitle1 onClick={this.onClick} target={this.state.projectTarget}/>
 						<ProjectTitle2 onClick={this.onClick} target={this.state.projectTarget}/>
 						<ProjectTitle3 onClick={this.onClick} target={this.state.projectTarget}/>

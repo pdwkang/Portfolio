@@ -13,9 +13,10 @@ class Portfolio extends Component {
     		<div>
     			<div className='portrait'><img src={contactBackground} alt='a'/></div>
     			<NavBar />
-
+    			<div className='home-background'></div>
 				<div id='home' className='vh home'>
 					<Home />
+					
 				</div>	
 				<div id='portfolio'>
 					<div className='portfolio-background'>
@@ -26,7 +27,7 @@ class Portfolio extends Component {
 							
 						</div>
 					</div>
-					<div style={{width:'100%', height:'100%', backgroundColor:'white'}}>
+					<div style={{width:'100%', height:'100%', backgroundColor: '#e0e0e0'}}>
 						<SkillsTable/>
 					</div>
 					<div className='contact-tab'>

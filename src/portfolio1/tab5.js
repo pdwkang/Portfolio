@@ -23,7 +23,7 @@ class Tab5 extends Component{
 			tabClass = 'each-tab'};
 		return(
 			<div onClick={this.onClick} className={tabClass} >
-				<div style={{backgroundColor:backgroundColor, borderLeft: borderColor, borderRight: borderColor, borderTop: borderColor, borderBottom: borderBottom, padding:'3px 10px'}}>
+				<div className='hidden-sm' style={{backgroundColor:backgroundColor, borderLeft: borderColor, borderRight: borderColor, borderTop: borderColor, borderBottom: borderBottom, padding:'3px 10px'}}>
 				Search.js
 				</div>
 			</div>

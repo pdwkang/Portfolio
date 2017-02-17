@@ -13,7 +13,7 @@ class Project extends Component{
 						<div className='show-me-on-hover'>Visit Website</div>
 						</a>
 
-						<div className='github-main' style={{position:'absolute', top:-16, right:10, width:90, zIndex:999}}>	
+						<div className='github-main'>	
 							<a target="_blank" href='https://github.com/pdwkang/blackjack'>
 								<img style={{width:'100%'}} alt='a' src={require('../others/images/github.png')} />
 							</a>

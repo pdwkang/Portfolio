@@ -47,7 +47,7 @@ class Tab5Description extends Component{
 					<div>&nbsp;&nbsp;{'};'}</div>
 					<div>{'};'}</div>
 					<br/>
-					<div>{cR('export default')} StockSearch; <span className='blinkTypeSomething'>|</span></div>
+					<div>{cR('export default')} Search; <span className='blinkTypeSomething'>|</span></div>
 				</div>
 			</div>
 		)
