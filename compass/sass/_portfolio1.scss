@@ -1,0 +1,156 @@
+$sublime-header: #171814;
+$sublime-body: #272822;
+
+	
+.sublime-wrapper{
+	height: 100vh;
+	overflow: auto ;
+	position: relative;
+	margin:0;
+	padding:0;
+	padding-top:75px;
+	background-color: $sublime-header;
+	// box-shadow: -6px 0px 10px 2px rgba(0,0,0,.4);
+	.sublime-header{
+		height:80px;
+		background-color: $sublime-header;
+		padding:0;
+		margin:0;
+		position: relative;
+		z-index: 20;
+		.sublime-header-title{
+			font-family: 'Libre Franklin';
+			padding-left:23px;
+			margin:auto;
+			color:white;
+			font-size: 14px;
+			padding-top: 13px;
+			.code-example-header{
+				display: inline-block;;
+				border: 2px solid white;
+				padding: 2px 5px;
+				margin-right: 5px;
+
+			}
+			.layout-built{
+				margin-top:2px;
+				font-size: 14px;
+				
+				padding-bottom:5px;
+				color:white;
+			}
+		}
+		.tabs{
+			position: absolute;
+			bottom: -1px;
+			left: 20px;
+			.each-tab{
+				margin:3px;
+				color:white;
+				display: inline-block;
+				margin-bottom: 0;
+
+			}
+			.each-tab-hover:hover{
+				color:white;
+				opacity:.3;
+				border-bottom:none;
+			}
+		}
+		.tabs:hover{
+			cursor: pointer;
+		}
+
+	}
+	.sublime-body{
+		display: none;
+	}
+}
+
+.sublime-active{
+	.each-tab{
+		background-color: white;
+	}
+}
+
+
+.sublime-body-animation{
+	animation: sublime-animation .9s linear;
+	border-top:1px solid white;
+	background-color: $sublime-body;
+	height:85vh;
+	width:100%;
+	padding:0;
+	margin:0;
+	color: white;
+	padding-top: 7px;
+	overflow: auto ;
+}
+
+@keyframes sublime-animation{
+	0%{
+		margin-top: -100vh;
+		opacity:.5;
+	}
+	40%{
+
+		margin-top:0;
+	}
+	55%{
+		margin-top:-3vh;
+	}
+	70%{
+
+		margin-top:0;
+	}
+	85%{
+		opacity:1;		
+		margin-top:-1.5vh;
+	}		
+	100%{
+	
+		margin-top:0;
+	}		
+}
+
+.blinkTypeSomething{
+	font-family: arial;
+	animation: blink-type-something 4s steps(10) infinite;
+}
+@keyframes blink-type-something{
+	0%{
+		color:white;
+	}
+	10%{
+		color:#272822;
+	}
+	20%{
+		color:white;
+	}
+	30%{
+		color:#272822;
+	}
+	40%{
+		color:white;
+	}
+	50%{
+		color:#272822;
+	}
+	60%{
+		color:white;
+	}
+	70%{
+		color:#272822;
+	}
+	80%{
+		color:white;
+	}
+	90%{
+		color:#272822;
+	}		
+	100%{
+		color:white;
+	}	
+}
+
+

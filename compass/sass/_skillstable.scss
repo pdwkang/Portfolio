@@ -1,0 +1,89 @@
+$table-color: #2E3641;
+.skills-table-wrapper{
+	// background-color: #F69087;
+	height: 100%;
+	width:100%;
+	margin-left:.3%;
+	margin: auto;
+	font-family: "Libre Franklin";
+	font-size:17.5px;
+	color:white;
+	padding: 0;
+	text-align: center;
+	margin-top: -5px;
+	box-shadow:0px 8px 10px 0px rgba(0,0,0,.4);
+	.skills-table-header{
+		height:20px;
+		background-color: $table-color;
+		padding:10px;
+	}
+	.front-end{
+		background: $table-color;
+		padding:15 0px;
+		padding-top: 5px;
+		border-radius: 2%;
+		// border-top-left-radius: 2%;	
+		// border-bottom-left-radius: 2%;	
+		margin-right:2%;
+		// margin-left:1%;
+		min-width:31%;
+		display: inline-block;
+		margin-bottom: 10px;
+		// border: 1px solid #E8E8E8;
+		// box-shadow:0px 3px 3px 0px rgba(0,0,0,0.05);
+		box-shadow:4px 8px 5px 0px rgba(0,0,0,.4);
+	}
+	.back-end{
+		// background-color: #2A6B91;#1E4E7E
+		background: $table-color;
+		padding:15 0px;
+		padding-top: 5px;
+		margin-right:2%;
+		min-width:31%;	
+		display: inline-block;	
+		margin-bottom: 10px;
+		border-radius: 2%;
+		box-shadow:4px 8px 5px 0px rgba(0,0,0,.4);
+		// box-shadow:0px 1px 1px 0px rgba(0,0,0,0.05);
+	}
+	.in-progress{
+		// background-color: #3183CF;
+		background: $table-color;
+		padding:15 0px;
+		padding-top: 5px;
+		// border-top-right-radius: 2%;	
+		// border-bottom-right-radius: 2%;			
+		min-width:31%;	
+		display: inline-block;		
+		margin-bottom: 10px;
+		border-radius: 2%;
+		// border: 1px solid #E8E8E8;
+		box-shadow:4px 8px 5px 0px rgba(0,0,0,.4);
+	}
+	.front-end-header{
+		padding:10px;
+	}
+	.back-end-header{
+		padding:10px;
+	}
+	.in-progress-header{
+		padding:10px;
+	}		
+}
+
+.each-skill{
+	background: rgba(255,255,255,1);
+	font-size:14px;
+	color: black;
+	font-weight: 900;
+	// padding:6px;
+	padding-left: 20px;
+	padding-right: 20px;
+	height:44px;
+	line-height: 44px;
+}
+
+.s2{
+	background: rgba(255,255,255,1)
+}
+ 

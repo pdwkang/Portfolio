@@ -1,0 +1,210 @@
+$skills-bg: transparent;
+$new-icon-bg: rgba(10, 10, 10, 0.80);
+$twitter-blue: #4099ff;
+$my-black:#262626;
+$my-grey:#EEEEEE;
+// gotta change bg on indexjs
+.skills-header{
+	width:100%;
+	height:11vh;
+	margin-top:50px;
+	overflow: hidden;
+	.skills-header-title{
+		position: absolute;
+		top:4vh;
+		color:black;;
+		letter-spacing: .5px;		
+		width:100%;
+		height:100%;
+		color:black;
+    	// text-shadow: 2px 2px black;
+    	font-size:36px;
+	}
+}
+.skills-page{
+	// overflow: hidden;
+	position: relative;
+	background-color: white;
+	
+}
+
+.skill-icons-wrapper{
+	font-family:'Libre Franklin';
+	font-size: .8em;
+	width:85%;
+	margin:auto;
+	
+	.each-icon{
+		margin:auto;
+		height:25vh;
+		padding:5vh 0;
+		text-align: center;
+		border-radius: 50%;
+		.icon-image{
+			margin:auto;
+			height:10vh;
+			padding-top: 5%;
+
+			img{
+				// opacity: .7;
+				// filter:grayscale(100%) brightness(40%); 
+				margin:auto;
+
+				display: block;
+				height:55%;
+			// box-shadow:5px 10px 4px 5px rgba(0,0,0,1);
+			// 	padding-bottom:20px;
+			// border-top:5px solid transparent;
+			// border-right:10px solid transparent;
+			// border-bottom:5px solid grey;
+			// border-left:10px solid transparent;				
+			// border-radius: 50%;
+			}
+		};
+		.border-div{
+			margin:auto;
+			display: block;
+			width:30%;
+			margin-top:5%;
+			border-radius: 50%;
+			// border-top:7px solid rgba(0,0,0,.5);
+			// box-shadow:0 2px 8px 1px rgba(0,0,0,.7);
+		}
+		.icon-name{
+			padding-top:10px;
+			width:100%;
+			margin:auto;
+			color:black;
+			letter-spacing: 1px;
+		}
+	}
+	.each-icon:hover{
+		// animation: background-change 0.3s linear;
+		// background-color: $new-icon-bg;
+		color:grey;
+		// transform: rotate(-15deg);
+		// transform: scale(1.1);
+		z-index: 5;
+		cursor: pointer;
+		overflow: hidden;
+		.icon-image{
+
+			// transform: scale(1.1);
+			img{
+				// opacity: 1;
+				// animation: bigger-image 0.3s linear;
+				// animation: tiltflag 0.3s linear;
+				// transition: height 2s;
+				height:100%;
+				// filter:drop-shadow(0px 15px .5px rgba(0,0,0,0.1));
+				margin-top:0;
+				filter:none;
+				
+
+			}
+		};
+		.icon-name{
+			// transform: rotate(15deg)
+		}		
+		.border-div{
+			border-top:7px solid transparent;
+			animation: bigger-border 0.3s linear;
+			width:40%;
+			border-color: grey;
+			// transform: rotate(15deg)			
+		}
+	}
+	// .github, .compass, .webpack, .nodejs, .jquery, .aws, .react{
+	// 	.icon-image{
+	// 		img{
+	// 			filter:grayscale(100%) invert(50%) brightness(150%)
+	// 		}
+	// 	}
+	// }
+	// .html, .css, .javascript, .nodejs, .bootstrap, .npm, .sourcetree{
+	// 	.icon-image{
+	// 		img{
+	// 			filter:grayscale(100%) brightness(80%)
+	// 		}
+	// 	}
+	// }	
+}
+
+.each-iconz{
+	display: inline-block;
+	width:15%;
+	padding:5px;
+}
+@keyframes background-change{
+	0%{
+		// background-color: background-color
+		color:black;
+		// transform: rotate(0deg);
+		transform: scale(1);
+	};
+	// 20%{transform: scale(.95);
+		
+		
+	// }
+	100%{
+		transform: scale(1)
+		// background-color: $new-icon-bg;
+		
+	}
+}
+@keyframes bigger-border{
+	0%{
+		width: 5%;
+	};
+	100%{
+		width: 40%;
+	}
+}
+@keyframes bigger-image{
+	0%{
+		margin-top:5%;
+		height: 70%;
+	};
+	100%{
+		margin-top:0;
+		height: 95%;
+	}
+}
+$my-icon-white: white;
+// .html{background-color: #1B818D; color:white;}
+// .css{background-color: $my-icon-white;}
+// .javascript{background-color: #aa00ff; color:lightyellow;}
+// .jquery{background-color: $my-icon-white;}
+// .bootstrap{background-color: orange;color:white;}
+// .ajax{background-color: $my-icon-white;}
+// .nodejs{background-color: $my-icon-white;}
+// .sass{background-color: #1a237e; color:white;}
+// .compass{background-color: $my-icon-white;}
+// .react{background-color: #b71c1c ; color:white}
+// .reactrouter{background-color: $my-icon-white;}
+// .json{background-color: #ff4081;color:white;}
+// .npm{background-color: $twitter-blue; color:white;	}
+// .git{background-color: $my-icon-white;}
+// .soucretree{background-color: #394D72; color:white;}
+// .github{background-color: $my-icon-white;}
+// .aws{background-color: purple; color:lightyellow;}
+// .webpack{background-color: $my-icon-white;}
+
+// .html{background-color: #1B818D; color:white;}
+// .css{background-color: rgba(255, 235, 59, 0.1)}
+// .javascript{background-color: #aa00ff; color:lightyellow;}
+// .jquery{background-color: #E9E6CA;}
+// .bootstrap{background-color: orange;color:white;}
+// .ajax{background-color: rgba(255, 235, 59, 0.3)}
+// .sass{background-color: #2E2E2E; color:white;}
+// .compass{background-color: rgba(76, 175, 80, 0.3)}
+// .react{background-color: #b71c1c ; color:white}
+// .reactrouter{background-color: rgba(76, 175, 80, 0.3) }
+// .json{background-color: #ff4081;color:white;}
+// .npm{background-color: $twitter-blue; color:white;	}
+// .nodejs{background-color: lightgrey;}
+// .git{background-color: rgba(3, 169, 244, 0.1)}
+// .soucretree{background-color: #394D72; color:white;}
+// .github{background-color: #E9E6CA;}
+// .aws{background-color: purple; color:yellow;}
+// .webpack{background-color: rgba(233, 30, 99, 0.1)}

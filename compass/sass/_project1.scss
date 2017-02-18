@@ -1,0 +1,349 @@
+// parent padding top 17vh
+.project-wrapper{
+	max-width:100%;
+	height:100vh;
+	// overflow: auto;
+	padding-left:3vw;
+	padding-top:70px;
+	margin:0;
+	// overflow: hidden;
+	box-shadow: inset 5px -2px 10px rgba(0,0,0,.4);
+	// box-shadow: inset 0px 0px 25px rgba(0,0,0,.4);
+	.upd8ed-header{
+		font-size: 25px;
+		font-family: 'Anton';
+		letter-spacing: .5px;
+		margin-bottom: 10px;
+
+		.featured-github-link{
+			display: inline-block;
+			margin-top:-6px;
+			margin-left:40px;
+			a{
+				img{
+					width:40px;
+					height:40px;
+				}
+				img:hover{
+					filter:invert(15%);
+					animation: tiltflag .3s linear;
+				}
+			}
+		}		
+	}
+	.project-image{
+		position:relative;
+		.project-image-div{
+		}
+		.show-on-hover{
+			display:none;
+			color:white;
+			position:absolute;
+			width:100%;
+			top:80px;
+			text-align:center;
+			margin:auto;
+			.project-link{
+				display:none;
+				width:20%;
+				background-color:black;
+			}
+		}
+	}
+}
+
+.project-description{
+	font-family:'Libre Franklin';
+	font-weight: 900;
+	font-size:15px;
+	width:90%;
+	margin:3% 6% 3% 0;
+}
+// .project-image:hover{	
+// 	cursor:pointer;
+// 	overflow: hidden;
+// 	.project-image-div{
+// 		animation: hoverProject .3s linear;
+// 		opacity: .3;
+//   		transform: scale(1.1);
+// 	}
+
+// 	.show-on-hover{
+// 		display: block;
+// 		.project-link{
+// 		}
+// 		.project-link:hover{
+
+// 		}		
+// 	}
+
+// }
+
+@keyframes hoverProject{
+	0%{
+		filter: none;
+		opacity:1;
+		transform: scale(1.0);
+	}
+	100%{
+		// filter:brightness(120%);
+		opacity: .3;
+		transform: scale(1.1);
+	}
+}
+
+.tag-wrapper{
+	width:90%;
+	margin:2% 1% 2% 0;
+	.tag-header{
+		font-family: 'Anton';
+		font-size: 17px;
+		width:97%;
+		margin-bottom:4px;
+		border-bottom:#272822 3px solid;
+	}
+	.tags{
+		display:inline-block;
+		border-radius:13%;
+		border: 2px solid #4099FF;
+		background-color:#272822;
+		margin:1px;
+		color:white;
+		font-family:'Libre Franklin';
+		padding: 3px 5px;
+		font-size: 13px
+	}
+}
+
+// $arrow-color:#5A5A58;
+// $arrow-color:rgba(40,40,40,0.35);
+$arrow-color:white; 
+.tab-wrapper{ 
+
+	min-margin-left: 20px;
+	margin-top: 30px;
+	background-color: $arrow-color;
+	height:40px;
+	font-size: 16px;
+	line-height: 35px;	
+	position: relative;
+	width:135px;
+	border:none;
+	border-bottom: 2px rgba(0,0,0,.4) solid;
+	color:grey;
+	.project-arrow-tab{
+		position: absolute;
+		right:20px;
+	}
+	.tab-triangle{
+		border:$arrow-color .5px solid;
+		height:28px;
+		width:28px;
+		transform:rotate(45deg);
+		background-color: $arrow-color;
+		position: absolute;
+		right:-14px;
+		top:6px;
+		border-right: 2px rgba(0,0,0,.4) solid;
+	}
+}
+
+.tab-wrapper:hover{
+	cursor:pointer;
+	width:125px;
+	transition: width .4s;
+
+}
+ .selected-tab:hover{
+	cursor:pointer;
+}
+
+$arrow-color2:#2E3641;
+
+.selected-tab{
+	min-margin-left: 20px;
+	margin-top: 30px;
+	background-color: $arrow-color2;
+	height:40px;
+	font-size: 16px;
+	line-height: 35px;	
+	position: relative;
+	width:170px;
+	border:none;
+	color:white;
+	transition: width .2s;
+	border-bottom: 2px rgba(0,0,0,.6) solid;
+	.project-arrow-tab{
+		position: absolute;
+		right:20px;
+	}
+	.tab-triangle{
+		border:$arrow-color2 .5px solid;
+		height:28px;
+		width:28px;
+		transform:rotate(45deg);
+		background-color: $arrow-color2;
+		position: absolute;
+		right:-14px;
+		top:6px;
+		border-right: 2px rgba(0,0,0,.6) solid;
+	}
+}
+
+$radius:1%;
+$radius2:0%;
+$project-header-color: #2E3641;
+.project-titles-header{
+	margin-top:25px;
+	position: relative;
+	height: 50px;
+	line-height: 50px;
+	width:140px;
+	margin-left:16px;
+	font-family: "Passion One";
+	font-size: 30px;
+	text-align: center;
+	background-color: $project-header-color;
+	color:white;
+	letter-spacing:1px;
+	border-radius: $radius;
+	.project-title-left-top{
+		position: absolute;
+		width: 105px;
+		height: 16px;
+		// border-left: 5px solid $project-header-color;
+		border-top: 5px solid $project-header-color;
+		top:-8px;
+		left:0px;
+		border-radius: $radius2;
+	}
+	.project-title-bottom-right{
+		position: absolute;
+		width: 105px;
+		height: 16px;
+		// border-right: 5px solid $project-header-color;
+		border-bottom: 5px solid $project-header-color;
+		bottom:-8px;
+		right:0px;
+		border-radius: $radius2;
+		// box-shadow:0px 6px 10px 0px rgba(0,0,0,.2);
+	}	
+}
+
+// sublime
+.project-titles-header2{
+	// margin-top:25px;
+	position: relative;
+	letter-spacing:1px;
+	height: 35px;
+	line-height: 35px;
+	width:200px;
+	margin-left:23px;
+	font-family: "Passion One";
+	font-size: 30px;
+	text-align: center;
+	background-color: white;
+	color:black;
+	border-radius: $radius;
+	.project-title-left-top2{
+		position: absolute;
+		width: 150px;
+		height: 13px;
+		// border-left: 3px solid white;
+		border-top:  3px solid white;
+		// border-right:  3px solid white;
+		top:-8px;
+		left:0px;
+		border-radius: $radius2;
+	}
+	.project-title-bottom-right2{
+		position: absolute;
+		width: 150px;
+		height: 13px;
+		// border-left: 3px solid white;
+		// border-right: 3px solid white;
+		border-bottom:  3px solid white;
+		bottom:-8px;
+		right:0px;
+		border-radius: $radius2;
+	}
+}
+
+
+// skills
+.project-titles-header3{
+	margin-left: 20px;
+	margin-top:95px;
+	position: relative;
+	height: 50px;
+	line-height: 50px;
+	width:130px;
+	font-family: "Passion One";
+	font-size: 30px;
+	text-align: center;
+	background-color:  $project-header-color;
+	color:white;
+	margin-bottom: 30px;
+	letter-spacing:1px;
+	border-radius: $radius;
+	.project-title-left-top3{
+		position: absolute;
+		width: 100px;
+		height: 13px;
+		// border-left: 5px solid $project-header-color;
+		border-top: 5px solid $project-header-color;
+		top:-8px;
+		left:0px;
+		border-radius: $radius2;
+	}
+	.project-title-bottom-right3{
+		position: absolute;
+		width: 100px;
+		height: 13px;
+		// border-right: 5px solid $project-header-color;
+		border-bottom: 5px solid $project-header-color;
+		bottom:-8px;
+		right:0px;
+		border-radius: $radius2;
+		// box-shadow:0px 8px 10px 0px rgba(0,0,0,.3);
+	}	
+}
+
+.project-titles-header4{
+	// margin-top:25px;
+	position: relative;
+	height: 50px;
+	line-height: 50px;
+	width:180px;
+	margin-left:23px;
+	font-family: "Passion One";
+	font-size: 30px;
+	letter-spacing:1px;
+	text-align: center;
+	background-color: white;
+	color:black;
+	border-radius: $radius;
+	.project-title-left-top4{
+		position: absolute;
+		width: 130px;
+		height: 13px;
+		// border-left: 3px solid white;
+		border-top:  3px solid white;
+		// border-right:  3px solid white;
+		top:-8px;
+		left:0px;
+		border-radius: $radius2;
+	}
+	.project-title-bottom-right4{
+		position: absolute;
+		width: 130px;
+		height: 13px;
+		// border-left: 3px solid white;
+		// border-right: 3px solid white;
+		border-bottom:  3px solid white;
+		bottom:-8px;
+		right:0px;
+		border-radius: $radius2;
+		box-shadow:0px 8px 10px 0px rgba(0,0,0,.3);
+	}
+}
