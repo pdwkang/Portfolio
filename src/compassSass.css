@@ -1830,36 +1830,42 @@ textarea {
 /* line 89, ../compass/sass/_contact.scss */
 .linkz {
   display: inline-block;
-  padding-left: 20px;
+  font-family: "Catamaran";
 }
-/* line 92, ../compass/sass/_contact.scss */
-.linkz a {
+/* line 93, ../compass/sass/_contact.scss */
+.linkz a:hover {
   opacity: .3;
+  color: white;
 }
-/* line 94, ../compass/sass/_contact.scss */
+/* line 96, ../compass/sass/_contact.scss */
+.linkz a:hover img {
+  border-top: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid white;
+  border-left: 5px solid transparent;
+  padding: 8px;
+  padding-left: 10px;
+}
+/* line 106, ../compass/sass/_contact.scss */
+.linkz a {
+  padding-left: 40px;
+  opacity: 1;
+  font-size: 20px;
+  color: white;
+}
+/* line 112, ../compass/sass/_contact.scss */
 .linkz a img {
   width: 100px;
   border-radius: 50%;
   padding: 13px;
   padding-left: 15px;
 }
-/* line 103, ../compass/sass/_contact.scss */
-.linkz a:hover {
-  opacity: 1;
-}
-/* line 106, ../compass/sass/_contact.scss */
-.linkz a:hover img {
-  border-top: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-bottom: 5px solid white;
-  border-left: 5px solid transparent;
-}
 
-/* line 115, ../compass/sass/_contact.scss */
+/* line 121, ../compass/sass/_contact.scss */
 .about-me-description {
   padding: 30px 0 20px 40px;
 }
-/* line 118, ../compass/sass/_contact.scss */
+/* line 124, ../compass/sass/_contact.scss */
 .about-me-description .actual-text {
   background-color: rgba(0, 0, 0, 0.3);
   font-family: "Catamaran";
@@ -2557,7 +2563,7 @@ body {
   height: 7vh;
   background: rgba(0, 0, 0, 0.5);
   color: white;
-  text-align: right;
+  text-align: center;
   line-height: 7vh;
   font-size: .9em;
   padding-right: 5%;

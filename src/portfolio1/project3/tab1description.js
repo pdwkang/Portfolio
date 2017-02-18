@@ -35,12 +35,13 @@ class Tab1Description extends Component{
 					
 					<div>{cB('const')} apiKey {cR('=')} {cY('"1234567890ASDFGHJKL"')};</div>						
 					<div>{cB('var')} apiBaseUrl {cR('=')} {cY('"http://api.themoviedb.....api_key="')};</div>
-					<div>{cB('var')} movieUrl{cR('=')} apiBaseUrl {cR('+')} apiKey;</div>
+					<div>{cB('var')} movieUrl {cR('=')} apiBaseUrl {cR('+')} apiKey;</div>
+					<div>{cB('var')} youtubeUrl {cR('=')} {cY('"http://www.youtube.com/embed/"')};</div>
 					<br/>
 					<div> {cGR('// Callback Hell')} </div>
 					<div>{cR('$')}({cB('document')}{').ready('}{cB('function')}{'(){'}</div>
 					<div>&nbsp;&nbsp;{'$.'}{cB('getJSON')}{'(movieUrl, ('}{cO('movieData')}{')'} {cB('=>')} {'{'}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;{cB('var')} movieHTML {cR('=')} {cY("''")}</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;{cB('var')} text {cR('=')} {cY("''")}</div>
 					<div>&nbsp;&nbsp;&nbsp;&nbsp;{cR('for')} ({cB('var')} i {cR('=')} {cB('0')}; i {cB('<')} {'movieData.results.length'}; i{cB('++')}{'{'}</div>
 					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{cB('var')} movieId {cR('=')} {'movieData.results[i].id'} </div>
 					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{cB('var')} trailerUrl {cR('=')} movieUrl + {cY('"movie/')} + movieId </div>
@@ -51,15 +52,18 @@ class Tab1Description extends Component{
 					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...</div>
 					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...</div>
 					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...</div>
-					<br/>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...</div>
-					<br/>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text {cR('+=')} {cY("'<div>'")} {cR('+')} movieData.results[i].title ...</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text {cR('+=')} {cY("'<div>'")} {cR('+')} movieData.results[i].genre ...</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text {cR('+=')} {cY("'<a href=\"'")} {cR('+')} youtubeUrl {cR('+')}  trailerData.results[0].key ... </div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text {cR('+=')} {cY("'<div>'")} {cR('+')} creditsData.cast[0] ...</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{cR('$')}{cY('(".movie-carousel")')}{'.'}{cB('html')}{'(text)'}</div>
 					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'});'} </div>
 					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'});'} </div>
 					<div>&nbsp;&nbsp;&nbsp;&nbsp;{'}'}</div>
 					<div>&nbsp;&nbsp;{'});'} </div>
+
 					<div>{'});'} <span className='blinkTypeSomething'>|</span></div>					
 				</div>
 			</div>

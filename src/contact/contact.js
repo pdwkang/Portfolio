@@ -57,7 +57,7 @@ class MyForm extends Component {
 							When I{"'"}m not coding, I memorize useless NBA stats or 
 							spend time on the golf course looking for my own balls. 
 							<br/><br/>
-							If you'd like to chat, send me an email !
+							If you{"'"}d like to chat, send me an email !
 						</div>
 					</div>
 				</div>
@@ -65,6 +65,7 @@ class MyForm extends Component {
   				<div className='row'>
   					<div className='linkz'><a target="_blank" href='https://github.com/pdwkang'><img src={require('./github.png')} alt='a' /></a></div>
   					<div className='linkz'><a target="_blank" href='https://www.linkedin.com/in/paul-kang-373820131'><img src={require('./linkedin.png')} alt='a' /></a></div>
+  					<div className='linkz'><a href='mailto:paulkangdev@gmail.com'>paulkangdev@gmail.com</a></div>
 				</div>
   			</form>			
 		)

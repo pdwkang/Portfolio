@@ -6,11 +6,14 @@ var cR = function(text){return <span className='sub-r'>{text}</span>};
 var cG = function(text){return <span className='sub-g'>{text}</span>};
 var cY = function(text){return <span className='sub-y'>{text}</span>};
 var cB = function(text){return <span className='sub-b'>{text}</span>};
-// var cP = function(text){return <span className='sub-p'>{text}</span>};
-// var sp = function(number){var returnThis
-// 	for(let i = 0; i < number; i++){returnThis += '<span>{&nbsp;&nbsp;}</span>'}
-// 		return returnThis;
-// 	}
+var cP = function(text){return <span className='sub-p'>{text}</span>};
+var sp = function(number){
+	var returnThis
+	for(let i = 0; i < number; i++){
+		returnThis += '<span>{&nbsp;&nbsp;}</span>'
+	}
+	return returnThis;
+}
 var brc = function(text){return <span>{'{'}{text}{'}'} </span>}
 var par = function(text){return <span>{'('}{text}{')'} </span>}
 // var lc = function(number){return <div className='col-sm-1 line-count'>{number}</div>};
@@ -36,7 +39,6 @@ class Tab1Description extends Component{
 					<div> {imporT('Business', '"./business/Business.js"')}</div>
 					<div> {imporT('{ Router,Route,hasHistory,IndexRoute }', '"react-router"')}</div>
 					...<br/>...<br/>...<br/><br/>
-
 					<div>ReactDOM.render(</div>
 					<div>&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('Router')} {cG('history')}{'='}{brc('hashHistory')}{'>'}</div>
 					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('Route')} {cG('component')}{'='}{brc('App')}{'>'}</div>

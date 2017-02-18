@@ -36,7 +36,6 @@ class Portfolio extends Component {
 						</div>
 						
 						<div className='rights' id='rights'>Copyright &copy; www.pauldkang.com 2017
-							<div className='emailz'>dwkang3403@gmail.com</div>
 						</div>
 						
 					</div>
