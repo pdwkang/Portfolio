@@ -350,7 +350,7 @@ class Car extends Component {
 			<div className='intro-wrapper'>	
 				<div className='intro-header'>Paul Kan<div className='spin-g'>g</div></div>
 {/*				<div className='intro-description'>HTML,&nbsp; CSS / SASS,&nbsp; JavaScript / jQuery,&nbsp; React.js</div> */}
-				<div className='intro-description'>Front End Developer</div>
+				<div className='intro-description'>Full Stack Developer</div>
 			</div>			
 			
 			</div>

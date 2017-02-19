@@ -4,7 +4,7 @@ $sublime-body: #272822;
 	
 .sublime-wrapper{
 	height: 100vh;
-	overflow: auto ;
+	// overflow: auto ;
 	position: relative;
 	margin:0;
 	padding:0;
@@ -17,7 +17,7 @@ $sublime-body: #272822;
 		padding:0;
 		margin:0;
 		position: relative;
-		z-index: 20;
+		z-index: 5;
 		.sublime-header-title{
 			font-family: 'Libre Franklin';
 			padding-left:23px;
@@ -78,7 +78,7 @@ $sublime-body: #272822;
 	animation: sublime-animation .9s linear;
 	border-top:1px solid white;
 	background-color: $sublime-body;
-	height:85vh;
+	height:80vh;
 	width:100%;
 	padding:0;
 	margin:0;

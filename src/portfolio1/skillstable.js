@@ -16,7 +16,7 @@ class SkillsTable extends Component{
 					<div className='each-skill'>HTML5 &nbsp;/ &nbsp;CSS3&nbsp; / &nbsp;<i style={{fontSize:17}}>Sass</i> </div>
 					<div className='each-skill s2'>Bootstrap &nbsp;/&nbsp; <i style={{fontSize:17}}>Responsive Design</i></div>
 					<div className='each-skill'>Javascript &nbsp;/&nbsp; jQuery &nbsp;/&nbsp; Ajax &nbsp;/&nbsp; JSON</div>
-					<div className='each-skill s2'><i style={{fontSize:17}}>React.js</i> &nbsp;/ &nbsp;Redux &nbsp;/ &nbsp;JSX &nbsp;/ &nbsp;ES6</div>
+					<div className='each-skill s2'><i style={{fontSize:17}}>React.js &nbsp; </i> / <i style={{fontSize:17}}> &nbsp;Redux </i> &nbsp;/ &nbsp;JSX &nbsp;/ &nbsp;ES6</div>
 				</div>
 				<div className='back-end'>
 					<div className='back-end-header'>Back-End</div>
@@ -43,14 +43,14 @@ class SkillsTable extends Component{
 				<div className='front-end' style={{width:'80vw', margin:'auto', marginTop:40}}>
 					<div className='front-end-header'>Front-End</div>
 					<div className='each-skill'>HTML5 &nbsp;/ &nbsp;CSS3&nbsp; / &nbsp;<i style={{fontSize:17}}>Sass</i> </div>
-					<div className='each-skill s2'>Bootstrap &nbsp;/&nbsp; <i style={{fontSize:17}}>Responsive Design</i></div>
-					<div className='each-skill'>Javascript &nbsp;/&nbsp; jQuery &nbsp;/&nbsp; Ajax &nbsp;/&nbsp; JSON</div>
-					<div className='each-skill s2'><i style={{fontSize:17}}>React.js</i> &nbsp;/ &nbsp;ES6 &nbsp;/ &nbsp;JSX &nbsp;/ &nbsp;Babel</div>
+					<div className='each-skill s2'><i style={{fontSize:17}}>Responsive Design</i></div>
+					<div className='each-skill'>Javascript &nbsp;/&nbsp; jQuery &nbsp;/&nbsp; Ajax</div>
+					<div className='each-skill s2'><i style={{fontSize:17}}>React.js</i> &nbsp;/ &nbsp;Redux &nbsp;/ &nbsp;JSX &nbsp;/ &nbsp;ES6</div>
 				</div>
 				<div className='back-end' style={{width:'80vw', margin:'auto', marginTop:40}}>
 					<div className='back-end-header'>Back-End</div>
-					<div className='each-skill '>Express</div>
-					<div className='each-skill s2'>NPM</div>
+					<div className='each-skill '>NPM / Express</div>
+					<div className='each-skill s2'>MySQL</div>
 				
 				</div>
 				<div className='in-progress' style={{width:'80vw', margin:'auto', marginTop:40}}>

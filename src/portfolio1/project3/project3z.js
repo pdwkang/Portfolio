@@ -32,7 +32,6 @@ class Project extends Component{
 					<div className='tags'>Bootstrap</div>
 					<div className='tags'>jQuery</div>					
 					<div className='tags'>Ajax</div>
-					<div className='tags'>"Callback Hell"</div>
 					<div className='tags'>JSON</div>
 					<div className='tags'>Movie API</div>
 				</div>

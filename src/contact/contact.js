@@ -48,24 +48,30 @@ class MyForm extends Component {
 				<div className='row'>
 					<div className='about-me-description col-lg-5 col-md-6 col-sm-7 col-xs-11'>
 						<div className='actual-text'>
+							<span className='hidden-xs'>
 							I{"'"}m a web developer based in Atlanta. 
 							<br/><br/>
+							</span>
 							I received a Psychology degree from UGA 
 							prior to discovering my passion for coding. 
 							This led me to join DigitalCrafts, a 16-week immersive coding bootcamp.
 							<br/><br/>
+							<span className='hidden-xs'>
 							When I{"'"}m not coding, I memorize useless NBA stats or 
 							spend time on the golf course looking for my own balls. 
-							<br/><br/>
-							If you{"'"}d like to chat, send me an email !
+							<br/><br/></span>
+							Contact me ! &nbsp;&nbsp;&nbsp;
+							<span>(706) 424-0364</span>
+							<div className='visible-xs'>paulkangdev@gmail.com</div>
 						</div>
+						
 					</div>
 				</div>
 				<div></div>
   				<div className='row'>
   					<div className='linkz'><a target="_blank" href='https://github.com/pdwkang'><img src={require('./github.png')} alt='a' /></a></div>
   					<div className='linkz'><a target="_blank" href='https://www.linkedin.com/in/paul-kang-373820131'><img src={require('./linkedin.png')} alt='a' /></a></div>
-  					<div className='linkz'><a href='mailto:paulkangdev@gmail.com'>paulkangdev@gmail.com</a></div>
+  					<div className='linkz'><a href='mailto:paulkangdev@gmail.com'><img src={require('./email.png')} alt='a' /></a></div>
 				</div>
   			</form>			
 		)

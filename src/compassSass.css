@@ -116,7 +116,6 @@
 /* line 5, ../compass/sass/_portfolio1.scss */
 .sublime-wrapper {
   height: 100vh;
-  overflow: auto;
   position: relative;
   margin: 0;
   padding: 0;
@@ -130,7 +129,7 @@
   padding: 0;
   margin: 0;
   position: relative;
-  z-index: 20;
+  z-index: 5;
 }
 /* line 21, ../compass/sass/_portfolio1.scss */
 .sublime-wrapper .sublime-header .sublime-header-title {
@@ -193,7 +192,7 @@
   animation: sublime-animation .9s linear;
   border-top: 1px solid white;
   background-color: #272822;
-  height: 85vh;
+  height: 80vh;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -648,7 +647,7 @@
 
 /* line 8, ../compass/sass/_car.scss */
 .background-car {
-  background: linear-gradient(to top, orange 0%, red 50%, purple 100%);
+  background: linear-gradient(to top, orange 20%, white 37%, #1A4BE5 60%, darkblue 100%);
   position: absolute;
   height: 100vh;
   overflow: hidden;
@@ -669,7 +668,7 @@
     background: linear-gradient(to top, red 0%, darkblue 100%);
   }
 }
-/* line 44, ../compass/sass/_car.scss */
+/* line 30, ../compass/sass/_car.scss */
 .windowz {
   position: absolute;
   background-color: white;
@@ -677,52 +676,52 @@
   height: 5.5px;
 }
 
-/* line 50, ../compass/sass/_car.scss */
+/* line 36, ../compass/sass/_car.scss */
 .w1, .w3, .w5, .w7, .w9, .w11 {
   left: 10px;
 }
 
-/* line 53, ../compass/sass/_car.scss */
+/* line 39, ../compass/sass/_car.scss */
 .w2, .w4, .w6, .w8, .w10, .w12 {
   right: 25px;
 }
 
-/* line 56, ../compass/sass/_car.scss */
+/* line 42, ../compass/sass/_car.scss */
 .w11, .w31, .w51, .w71, .w91, .w111 {
   left: 25px;
 }
 
-/* line 59, ../compass/sass/_car.scss */
+/* line 45, ../compass/sass/_car.scss */
 .w21, .w41, .w61, .w81, .w101, .w121 {
   right: 10px;
 }
 
-/* line 62, ../compass/sass/_car.scss */
+/* line 48, ../compass/sass/_car.scss */
 .w1, .w2, .w11, .w21 {
   top: 20px;
 }
 
-/* line 63, ../compass/sass/_car.scss */
+/* line 49, ../compass/sass/_car.scss */
 .w3, .w4, .w31, .w41 {
   top: 40px;
 }
 
-/* line 64, ../compass/sass/_car.scss */
+/* line 50, ../compass/sass/_car.scss */
 .w5, .w6, .w51, .w61 {
   top: 60px;
 }
 
-/* line 65, ../compass/sass/_car.scss */
+/* line 51, ../compass/sass/_car.scss */
 .w7, .w8, .w71, .w81 {
   top: 80px;
 }
 
-/* line 66, ../compass/sass/_car.scss */
+/* line 52, ../compass/sass/_car.scss */
 .w9, .w10, .w91, .w101 {
   top: 100px;
 }
 
-/* line 67, ../compass/sass/_car.scss */
+/* line 53, ../compass/sass/_car.scss */
 .w11, .w12, .w111, .w121 {
   top: 100px;
 }
@@ -744,7 +743,7 @@
     background-color: rgba(255, 255, 255, 0.3);
   }
 }
-/* line 87, ../compass/sass/_car.scss */
+/* line 73, ../compass/sass/_car.scss */
 .sky-scraper-triangle {
   height: 70px;
   width: 100%;
@@ -753,7 +752,7 @@
   border-top-left-radius: 5%;
 }
 
-/* line 97, ../compass/sass/_car.scss */
+/* line 80, ../compass/sass/_car.scss */
 .sky-scraper-triangle-round {
   height: 63px;
   width: 100%;
@@ -762,7 +761,7 @@
   background: radial-gradient(ellipse at center, rgba(28, 35, 80, 0.7) 0%, #0a0a0a 100%);
 }
 
-/* line 106, ../compass/sass/_car.scss */
+/* line 88, ../compass/sass/_car.scss */
 .sky-scraper-body {
   margin-top: -35px;
   height: 220px;
@@ -771,25 +770,25 @@
   position: relative;
 }
 
-/* line 114, ../compass/sass/_car.scss */
+/* line 95, ../compass/sass/_car.scss */
 .huge-sky-scraper {
   height: 280px;
   width: 50px;
   display: inline-block;
-  background: linear-gradient(to bottom, #141414 0%, black 80%);
+  background: linear-gradient(to bottom, #1e1e1e 0%, black 80%);
   border-top: solid 5.5px #2c2c28;
   position: relative;
 }
 
-/* line 123, ../compass/sass/_car.scss */
+/* line 103, ../compass/sass/_car.scss */
 .cool-tower {
   height: 280px;
   width: 8px;
   display: inline-block;
-  background: linear-gradient(to bottom, #050505 0%, black 80%);
+  background: linear-gradient(to bottom, #141414 0%, black 80%);
 }
 
-/* line 129, ../compass/sass/_car.scss */
+/* line 109, ../compass/sass/_car.scss */
 .sky-scraper-wrapper {
   width: 8300px;
   position: absolute;
@@ -797,14 +796,14 @@
   animation: 45s linear infinite sky-scraper;
   overflow: hidden;
 }
-/* line 135, ../compass/sass/_car.scss */
+/* line 115, ../compass/sass/_car.scss */
 .sky-scraper-wrapper .sky-scraper {
   width: 70px;
   overflow: hidden;
   display: inline-block;
   position: relative;
 }
-/* line 149, ../compass/sass/_car.scss */
+/* line 121, ../compass/sass/_car.scss */
 .sky-scraper-wrapper .baby-sky-scraper {
   width: 8px;
   height: 110px;
@@ -815,44 +814,16 @@
   border-top: 2px solid rgba(25, 25, 25, 0.8);
   position: relative;
 }
-/* line 160, ../compass/sass/_car.scss */
+/* line 131, ../compass/sass/_car.scss */
 .sky-scraper-wrapper .black-sky-scraper {
   width: 8px;
   display: inline-block;
-  background: linear-gradient(to bottom, #0a0a0a 0%, black 70%);
+  background: linear-gradient(to bottom, #242c37 0%, black 80%);
   border-top-right-radius: "6%";
   border-top-left-radius: "6%";
   position: relative;
 }
-/* line 169, ../compass/sass/_car.scss */
-.sky-scraper-wrapper .baby-sky-scraper2 {
-  width: 80px;
-  height: 145px;
-  display: inline-block;
-  background-color: black;
-  background: radial-gradient(ellipse at center, #212121 0%, #050505 100%);
-  border-top-right-radius: "6%";
-  border-top-left-radius: "6%";
-}
-/* line 179, ../compass/sass/_car.scss */
-.sky-scraper-wrapper .baby-sky-scraper3 {
-  width: 80px;
-  height: 170px;
-  display: inline-block;
-  background: radial-gradient(ellipse at center, #212121 0%, #050505 100%);
-  border-top-right-radius: "6%";
-  border-top-left-radius: "6%";
-}
-/* line 188, ../compass/sass/_car.scss */
-.sky-scraper-wrapper .baby-sky-scraper4 {
-  width: 90px;
-  height: 230px;
-  display: inline-block;
-  background: radial-gradient(ellipse at center, #191919 0%, #010101 100%);
-  border-top-right-radius: "6%";
-  border-top-left-radius: "6%";
-}
-/* line 200, ../compass/sass/_car.scss */
+/* line 143, ../compass/sass/_car.scss */
 .sky-scraper-wrapper div div:hover .windowz {
   background-color: black;
 }
@@ -865,7 +836,7 @@
     left: 0px;
   }
 }
-/* line 215, ../compass/sass/_car.scss */
+/* line 158, ../compass/sass/_car.scss */
 .light {
   border-bottom: 650px solid #6496c8;
   border-left: 26px solid transparent;
@@ -879,7 +850,7 @@
   top: -216px;
 }
 
-/* line 230, ../compass/sass/_car.scss */
+/* line 173, ../compass/sass/_car.scss */
 #car {
   z-index: 5;
   padding-left: 40px;
@@ -888,14 +859,14 @@
   position: relative;
 }
 
-/* line 238, ../compass/sass/_car.scss */
+/* line 181, ../compass/sass/_car.scss */
 .upperPart {
   height: 60px;
   width: 400px;
   margin-left: 15px;
 }
 
-/* line 244, ../compass/sass/_car.scss */
+/* line 187, ../compass/sass/_car.scss */
 .triangle {
   width: 0;
   height: 0;
@@ -905,7 +876,7 @@
   border-left: 80px solid transparent;
 }
 
-/* line 253, ../compass/sass/_car.scss */
+/* line 196, ../compass/sass/_car.scss */
 .triangle-body {
   width: 0;
   height: 0;
@@ -916,7 +887,7 @@
   border-left: 75px solid transparent;
 }
 
-/* line 262, ../compass/sass/_car.scss */
+/* line 205, ../compass/sass/_car.scss */
 .windshield {
   width: 12px;
   height: 80px;
@@ -929,7 +900,7 @@
   left: 230px;
 }
 
-/* line 274, ../compass/sass/_car.scss */
+/* line 217, ../compass/sass/_car.scss */
 .upper-body-top {
   width: 80px;
   height: 8px;
@@ -941,7 +912,7 @@
   left: 267px;
 }
 
-/* line 285, ../compass/sass/_car.scss */
+/* line 228, ../compass/sass/_car.scss */
 .windshield2 {
   width: 9px;
   height: 45px;
@@ -954,7 +925,7 @@
   left: 356px;
 }
 
-/* line 297, ../compass/sass/_car.scss */
+/* line 240, ../compass/sass/_car.scss */
 .triangle-body2 {
   width: 0;
   height: 0;
@@ -965,7 +936,7 @@
   border-left: 75px solid transparent;
 }
 
-/* line 307, ../compass/sass/_car.scss */
+/* line 250, ../compass/sass/_car.scss */
 .window {
   width: 0;
   height: 0;
@@ -976,7 +947,7 @@
   border-left: 44px solid transparent;
 }
 
-/* line 317, ../compass/sass/_car.scss */
+/* line 260, ../compass/sass/_car.scss */
 .body {
   height: 80px;
   width: 450px;
@@ -987,7 +958,7 @@
   border-bottom-right-radius: 25%;
 }
 
-/* line 327, ../compass/sass/_car.scss */
+/* line 270, ../compass/sass/_car.scss */
 .door {
   height: 70px;
   width: 196px;
@@ -1007,7 +978,7 @@
   box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.8);
 }
 
-/* line 347, ../compass/sass/_car.scss */
+/* line 290, ../compass/sass/_car.scss */
 .knob {
   height: 12px;
   width: 30px;
@@ -1020,7 +991,7 @@
   box-shadow: 1.5px 1.5px 3px 3px rgba(0, 0, 0, 0.8);
 }
 
-/* line 360, ../compass/sass/_car.scss */
+/* line 303, ../compass/sass/_car.scss */
 .headlight {
   height: 26px;
   width: 12px;
@@ -1032,7 +1003,7 @@
   border-left: none;
 }
 
-/* line 372, ../compass/sass/_car.scss */
+/* line 315, ../compass/sass/_car.scss */
 .tail-light {
   height: 19px;
   width: 8px;
@@ -1044,7 +1015,7 @@
   border-radius: 20%;
 }
 
-/* line 384, ../compass/sass/_car.scss */
+/* line 327, ../compass/sass/_car.scss */
 .circle1 {
   height: 80px;
   width: 80px;
@@ -1056,7 +1027,7 @@
   border: 3px solid black;
 }
 
-/* line 395, ../compass/sass/_car.scss */
+/* line 338, ../compass/sass/_car.scss */
 .circle2 {
   height: 80px;
   width: 80px;
@@ -1068,7 +1039,7 @@
   border: 3px solid black;
 }
 
-/* line 406, ../compass/sass/_car.scss */
+/* line 349, ../compass/sass/_car.scss */
 .rim {
   height: 54px;
   width: 54px;
@@ -1079,12 +1050,12 @@
   border: 5px white solid;
 }
 
-/* line 416, ../compass/sass/_car.scss */
+/* line 359, ../compass/sass/_car.scss */
 .rotate {
   animation: spin .2s infinite linear;
 }
 
-/* line 420, ../compass/sass/_car.scss */
+/* line 363, ../compass/sass/_car.scss */
 .moveUp {
   animation: moveUp .4s infinite linear;
 }
@@ -1116,19 +1087,19 @@
     margin-top: 10px;
   }
 }
-/* line 453, ../compass/sass/_car.scss */
+/* line 396, ../compass/sass/_car.scss */
 .rim-inside {
   position: absolute;
   border-bottom: 6px solid white;
 }
 
-/* line 457, ../compass/sass/_car.scss */
+/* line 400, ../compass/sass/_car.scss */
 .r1 {
   height: 22px;
   width: 50px;
 }
 
-/* line 461, ../compass/sass/_car.scss */
+/* line 404, ../compass/sass/_car.scss */
 .r2 {
   transform: rotate(45deg);
   height: 27px;
@@ -1136,7 +1107,7 @@
   margin-left: 7px;
 }
 
-/* line 467, ../compass/sass/_car.scss */
+/* line 410, ../compass/sass/_car.scss */
 .r3 {
   transform: rotate(-45deg);
   height: 1px;
@@ -1144,7 +1115,7 @@
   margin-top: 22px;
 }
 
-/* line 474, ../compass/sass/_car.scss */
+/* line 417, ../compass/sass/_car.scss */
 .rim-inside-circle {
   background-color: white;
   position: absolute;
@@ -1155,7 +1126,7 @@
   border-radius: 50%;
 }
 
-/* line 484, ../compass/sass/_car.scss */
+/* line 427, ../compass/sass/_car.scss */
 .road {
   padding-top: 5px;
   height: 50px;
@@ -1174,7 +1145,7 @@
     margin-top: 15px;
   }
 }
-/* line 504, ../compass/sass/_car.scss */
+/* line 447, ../compass/sass/_car.scss */
 .white-line {
   height: 12px;
   width: 100px;
@@ -1202,7 +1173,7 @@
     margin-left: 100%;
   }
 }
-/* line 520, ../compass/sass/_car.scss */
+/* line 463, ../compass/sass/_car.scss */
 .car-shadow {
   width: 450px;
   background: rgba(54, 25, 25, 0.45);
@@ -1211,7 +1182,7 @@
   margin-left: 30%;
 }
 
-/* line 528, ../compass/sass/_car.scss */
+/* line 471, ../compass/sass/_car.scss */
 .fly {
   position: absolute;
   border: 2px solid white;
@@ -1225,36 +1196,36 @@
   padding: 1px;
 }
 
-/* line 540, ../compass/sass/_car.scss */
+/* line 483, ../compass/sass/_car.scss */
 .fly-number {
   font-weight: 800;
 }
 
-/* line 543, ../compass/sass/_car.scss */
+/* line 486, ../compass/sass/_car.scss */
 .letter1 {
   left: 20px;
   animation: bounceLetters .44s infinite linear;
 }
 
-/* line 544, ../compass/sass/_car.scss */
+/* line 487, ../compass/sass/_car.scss */
 .letter2 {
   left: 60px;
   animation: bounceLetters .32s infinite linear;
 }
 
-/* line 545, ../compass/sass/_car.scss */
+/* line 488, ../compass/sass/_car.scss */
 .letter3 {
   left: 20px;
   animation: bounceLetters2 .42s infinite linear;
 }
 
-/* line 546, ../compass/sass/_car.scss */
+/* line 489, ../compass/sass/_car.scss */
 .letter4 {
   left: 80px;
   animation: bounceLetters2 .31s infinite linear;
 }
 
-/* line 547, ../compass/sass/_car.scss */
+/* line 490, ../compass/sass/_car.scss */
 .letter5 {
   left: 120px;
   animation: bounceLetters2 .43s infinite linear;
@@ -1282,7 +1253,7 @@
     top: 70px;
   }
 }
-/* line 575, ../compass/sass/_car.scss */
+/* line 518, ../compass/sass/_car.scss */
 .letterK {
   animation: lk 4s infinite linear;
 }
@@ -1311,7 +1282,7 @@
     left: 20px;
   }
 }
-/* line 586, ../compass/sass/_car.scss */
+/* line 529, ../compass/sass/_car.scss */
 .letterA {
   animation: la2 4s infinite linear;
 }
@@ -1340,7 +1311,7 @@
     left: 60px;
   }
 }
-/* line 596, ../compass/sass/_car.scss */
+/* line 539, ../compass/sass/_car.scss */
 .letterN {
   animation: ln 4s infinite linear;
 }
@@ -1369,7 +1340,7 @@
     left: 100px;
   }
 }
-/* line 606, ../compass/sass/_car.scss */
+/* line 549, ../compass/sass/_car.scss */
 .letterG {
   animation: lg 4s infinite linear;
 }
@@ -1398,18 +1369,18 @@
     left: 140px;
   }
 }
-/* line 631, ../compass/sass/_car.scss */
+/* line 574, ../compass/sass/_car.scss */
 .moon {
   position: absolute;
   border-radius: 50%;
-  background: linear-gradient(to bottom, rgba(241, 231, 103, 0.1) 0%, yellow 100%);
+  background: linear-gradient(to top, rgba(241, 231, 103, 0.1) 0%, yellow 100%);
   height: 95px;
   width: 95px;
-  top: 30vh;
+  top: 32vh;
   left: 45%;
 }
 
-/* line 641, ../compass/sass/_car.scss */
+/* line 584, ../compass/sass/_car.scss */
 .moon-space {
   position: absolute;
   border-radius: 50%;
@@ -1420,7 +1391,7 @@
   left: 30px;
 }
 
-/* line 651, ../compass/sass/_car.scss */
+/* line 594, ../compass/sass/_car.scss */
 .cloud {
   position: absolute;
   border-radius: 50%;
@@ -1442,7 +1413,7 @@
     left: 20px;
   }
 }
-/* line 671, ../compass/sass/_car.scss */
+/* line 614, ../compass/sass/_car.scss */
 .cloud2 {
   position: absolute;
   border-radius: 50%;
@@ -1452,7 +1423,7 @@
   animation: moveCloud2 13s infinite linear;
 }
 
-/* line 679, ../compass/sass/_car.scss */
+/* line 622, ../compass/sass/_car.scss */
 .cloud3 {
   position: absolute;
   border-radius: 50%;
@@ -1462,7 +1433,7 @@
   animation: moveCloud2 30s infinite linear;
 }
 
-/* line 687, ../compass/sass/_car.scss */
+/* line 630, ../compass/sass/_car.scss */
 .cloud4 {
   position: absolute;
   border-radius: 50%;
@@ -1483,14 +1454,14 @@
     left: 30px;
   }
 }
-/* line 708, ../compass/sass/_car.scss */
+/* line 651, ../compass/sass/_car.scss */
 .cloud-sm {
   position: absolute;
   border-radius: 50%;
   background-color: #f5f5f5;
 }
 
-/* line 713, ../compass/sass/_car.scss */
+/* line 656, ../compass/sass/_car.scss */
 .cl1 {
   height: 20px;
   width: 20px;
@@ -1498,7 +1469,7 @@
   left: 5px;
 }
 
-/* line 719, ../compass/sass/_car.scss */
+/* line 662, ../compass/sass/_car.scss */
 .cl2 {
   height: 15px;
   width: 15px;
@@ -1506,7 +1477,7 @@
   left: 29px;
 }
 
-/* line 725, ../compass/sass/_car.scss */
+/* line 668, ../compass/sass/_car.scss */
 .cl4 {
   height: 25px;
   width: 25px;
@@ -1514,7 +1485,7 @@
   left: 10px;
 }
 
-/* line 731, ../compass/sass/_car.scss */
+/* line 674, ../compass/sass/_car.scss */
 .cl3 {
   height: 18px;
   width: 18px;
@@ -1522,13 +1493,13 @@
   left: 29px;
 }
 
-/* line 738, ../compass/sass/_car.scss */
+/* line 681, ../compass/sass/_car.scss */
 .street-light-wrapper {
   bottom: 47px;
   position: absolute;
   animation: pass 4.5s linear infinite;
 }
-/* line 742, ../compass/sass/_car.scss */
+/* line 685, ../compass/sass/_car.scss */
 .street-light-wrapper .street-light-pole {
   background-color: lightgrey;
   bottom: 0;
@@ -1537,7 +1508,7 @@
   position: absolute;
   border-top-left-radius: 50%;
 }
-/* line 750, ../compass/sass/_car.scss */
+/* line 693, ../compass/sass/_car.scss */
 .street-light-wrapper .street-top-pole {
   left: 5px;
   bottom: 210px;
@@ -1548,7 +1519,7 @@
   border-top: 10px solid lightgrey;
   border-right: 10px solid lightgrey;
 }
-/* line 760, ../compass/sass/_car.scss */
+/* line 703, ../compass/sass/_car.scss */
 .street-light-wrapper .street-top-light {
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
@@ -1560,7 +1531,7 @@
   width: 50px;
   transform: rotate(-20deg);
 }
-/* line 771, ../compass/sass/_car.scss */
+/* line 714, ../compass/sass/_car.scss */
 .street-light-wrapper .street-light-bulb {
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
@@ -1573,7 +1544,7 @@
   transform: rotate(-20deg);
 }
 
-/* line 785, ../compass/sass/_car.scss */
+/* line 728, ../compass/sass/_car.scss */
 .intro-wrapper {
   position: absolute;
   top: 40px;
@@ -1581,23 +1552,23 @@
   text-align: center;
   color: white;
 }
-/* line 792, ../compass/sass/_car.scss */
+/* line 735, ../compass/sass/_car.scss */
 .intro-wrapper .intro-header {
   font-size: 5em;
   font-family: 'Passion One';
 }
-/* line 797, ../compass/sass/_car.scss */
+/* line 740, ../compass/sass/_car.scss */
 .intro-wrapper .intro-description {
   font-size: 1.2em;
   font-family: 'Libre Franklin';
 }
 
-/* line 803, ../compass/sass/_car.scss */
+/* line 746, ../compass/sass/_car.scss */
 .spin-g {
   display: inline-block;
 }
 
-/* line 813, ../compass/sass/_car.scss */
+/* line 756, ../compass/sass/_car.scss */
 .tree {
   display: inline-block;
   border-radius: 50%;
@@ -1618,14 +1589,14 @@
     left: 30px;
   }
 }
-/* line 834, ../compass/sass/_car.scss */
+/* line 777, ../compass/sass/_car.scss */
 .tree-sm {
   position: absolute;
   border-radius: 50%;
   background-color: green;
 }
 
-/* line 839, ../compass/sass/_car.scss */
+/* line 782, ../compass/sass/_car.scss */
 .tr1 {
   height: 20px;
   width: 20px;
@@ -1633,7 +1604,7 @@
   left: 5px;
 }
 
-/* line 845, ../compass/sass/_car.scss */
+/* line 788, ../compass/sass/_car.scss */
 .tr2 {
   height: 15px;
   width: 15px;
@@ -1641,7 +1612,7 @@
   left: 29px;
 }
 
-/* line 851, ../compass/sass/_car.scss */
+/* line 794, ../compass/sass/_car.scss */
 .tr4 {
   height: 25px;
   width: 25px;
@@ -1649,7 +1620,7 @@
   left: 10px;
 }
 
-/* line 857, ../compass/sass/_car.scss */
+/* line 800, ../compass/sass/_car.scss */
 .tr3 {
   height: 18px;
   width: 18px;
@@ -1709,9 +1680,9 @@
 .arrow {
   position: absolute;
   bottom: 1px;
-  left: 48%;
-  width: 60px;
-  height: 60px;
+  left: 46%;
+  width: 55px;
+  height: 55px;
   opacity: .4;
   background-image: url("../src/home/arrow.png");
   background-size: contain;
@@ -1856,7 +1827,6 @@ textarea {
 /* line 112, ../compass/sass/_contact.scss */
 .linkz a img {
   width: 100px;
-  border-radius: 50%;
   padding: 13px;
   padding-left: 15px;
 }
@@ -2469,7 +2439,7 @@ body {
   z-index: 200;
 }
 
-/* line 88, ../compass/sass/compassSass.scss */
+/* line 89, ../compass/sass/compassSass.scss */
 .about {
   top: 100vh;
   width: 100%;
@@ -2477,7 +2447,7 @@ body {
   height: 100vh;
 }
 
-/* line 96, ../compass/sass/compassSass.scss */
+/* line 97, ../compass/sass/compassSass.scss */
 .skills {
   margin: 0;
   left: 0;
@@ -2486,12 +2456,12 @@ body {
   overflow: hidden;
 }
 
-/* line 106, ../compass/sass/compassSass.scss */
+/* line 107, ../compass/sass/compassSass.scss */
 .portfolio-background {
   background: white;
 }
 
-/* line 123, ../compass/sass/compassSass.scss */
+/* line 124, ../compass/sass/compassSass.scss */
 #portfolio {
   position: absolute;
   margin: 0;
@@ -2500,12 +2470,12 @@ body {
   width: 100%;
   padding: 0;
 }
-/* line 131, ../compass/sass/compassSass.scss */
+/* line 132, ../compass/sass/compassSass.scss */
 #portfolio .portfolio1 {
   width: 100%;
   position: relative;
 }
-/* line 134, ../compass/sass/compassSass.scss */
+/* line 135, ../compass/sass/compassSass.scss */
 #portfolio .portfolio1 .project-titles {
   width: 20%;
   position: absolute;
@@ -2518,7 +2488,7 @@ body {
   display: inline-block;
   box-shadow: 3px -5px 3px 0px rgba(0, 0, 0, 0.2);
 }
-/* line 148, ../compass/sass/compassSass.scss */
+/* line 149, ../compass/sass/compassSass.scss */
 #portfolio .portfolio1 .portfolio-page {
   position: relative;
   width: 80%;
@@ -2527,19 +2497,19 @@ body {
   overflow: hidden;
   display: inline-block;
 }
-/* line 159, ../compass/sass/compassSass.scss */
+/* line 160, ../compass/sass/compassSass.scss */
 #portfolio .contact-tab {
   position: relative;
   height: 100vh;
 }
-/* line 162, ../compass/sass/compassSass.scss */
+/* line 163, ../compass/sass/compassSass.scss */
 #portfolio .contact-tab .contact {
   width: 100%;
   overflow: hidden;
   height: 93vh;
 }
 
-/* line 171, ../compass/sass/compassSass.scss */
+/* line 172, ../compass/sass/compassSass.scss */
 .portrait img {
   height: 100%;
   position: fixed;
@@ -2547,7 +2517,7 @@ body {
   right: 0;
 }
 
-/* line 178, ../compass/sass/compassSass.scss */
+/* line 179, ../compass/sass/compassSass.scss */
 .paul {
   color: white;
   font-family: 'Libre Franklin';
@@ -2557,7 +2527,7 @@ body {
   left: 20px;
 }
 
-/* line 187, ../compass/sass/compassSass.scss */
+/* line 188, ../compass/sass/compassSass.scss */
 .rights {
   width: 100%;
   height: 7vh;
@@ -2571,7 +2541,7 @@ body {
   position: relative;
 }
 
-/* line 199, ../compass/sass/compassSass.scss */
+/* line 200, ../compass/sass/compassSass.scss */
 .emailz {
   color: white;
   width: 100%;
@@ -2580,4 +2550,15 @@ body {
   padding-left: 5%;
   position: absolute;
   text-align: left;
+}
+
+/* line 213, ../compass/sass/compassSass.scss */
+.portfolio-nav-bar .navbar-inverse {
+  background-color: rgba(20, 20, 20, 0.9);
+  border: none;
+  color: black;
+}
+/* line 219, ../compass/sass/compassSass.scss */
+.portfolio-nav-bar .navbar {
+  border-radius: 0;
 }

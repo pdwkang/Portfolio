@@ -83,6 +83,7 @@ body{
 	// box-shadow: inset 0px -10px 20px rgba(0,0,0,.4);
 	// border-bottom:10px grey solid;
 	z-index: 200;
+	// filter:brightness(180%)
 }
 
 .about{
@@ -208,3 +209,14 @@ body{
 	// font-size: 15px;
 }
 
+.portfolio-nav-bar{
+	.navbar-inverse{
+		background-color: rgba(20,20,20,0.9);
+		border:none;
+		// border-radius: none;
+		color:black;
+	}
+	.navbar{
+		border-radius: 0;
+	}
+}

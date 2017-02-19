@@ -33,7 +33,7 @@ class Tab1Description extends Component{
 					})}
 				</div>
 				<div className='col-sm-10 col-md-11'>
-					<div> {imporT('React, { Component } from ', '"react"')}</div>
+					<div> {imporT('React, { Component }', '"react"')}</div>
 					<div> {imporT('$', '"jquery"')}</div>
 					<div> {imporT('App', '"./App"')}</div>
 					<div> {imporT('Business', '"./business/Business.js"')}</div>

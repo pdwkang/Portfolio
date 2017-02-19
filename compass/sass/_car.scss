@@ -6,7 +6,7 @@
 	overflow-x: hidden;
 }
 .background-car{
-	background: linear-gradient(to top, orange  0%, red 50%,  purple 100%);
+	background: linear-gradient(to top, orange  20%, white 37%, #1A4BE5 60%,  darkblue 100%);
 	position: absolute;
 	height:100vh;
 	overflow: hidden;
@@ -27,20 +27,6 @@
 		background: linear-gradient(to top, red 0%, darkblue 100%);
 	}
 }
-
-// .bat-man{
-// 	border-bottom: 750px solid rgba(100,150,200,1);
-// 	border-left: 26px solid transparent;
-// 	border-right: 26px solid transparent;
-// 	height: 0;
-// 	width: 78px;	
-// 	transform:rotate(90deg);		
-// 	animation: blink .3s infinite linear;
-// 	position:absolute;
-// 	top:60%;
-// 	left:35%;
-// 	// top:-216px;
-// }
 .windowz{
 	position: absolute;
 	background-color: white;
@@ -88,10 +74,7 @@ $br: '6%';
 	height:70px;
 	width:100%;
 	transform:rotate(45deg);
-	// background: radial-gradient(ellipse at center, rgba(15,15,15,1) 0%,rgba(10,10,10,1) 100%);
 	background-color: black;
-	// border-left:4px solid rgb(31, 42, 11);
-	// border-top:4px solid rgb(31, 42, 11);
 	border-top-left-radius: 5%;
 }
 .sky-scraper-triangle-round{
@@ -100,14 +83,12 @@ $br: '6%';
 	border-top-right-radius: 50%;
 	border-top-left-radius: 50%;	
 	background: radial-gradient(ellipse at center,  rgba(28,35,80,0.7) 0%,rgba(10,10,10,1) 100%);
-	// background-color: rgba(0,0,222,0.5)
 
 }
 .sky-scraper-body{
 	margin-top:-35px;
 	height:220px;
 	width:100%;
-	// background: radial-gradient(ellipse at center, rgba(15,15,15,1) 0%,rgba(10,10,10,1) 100%);
 	background-color: black ;
 	position: relative;
 }
@@ -115,8 +96,7 @@ $br: '6%';
 	height:280px;
 	width:50px;
 	display: inline-block; 
-	background: linear-gradient(to bottom, rgb(20,20,20) 0%, black 80%);
-	// background-color: rgba(0, 0, 0, 0.9);
+	background: linear-gradient(to bottom, rgb(30,30,30) 0%, black 80%);
 	border-top: solid 5.5px rgb(44,44,40);
 	position:relative;
 }	
@@ -124,7 +104,7 @@ $br: '6%';
 	height:280px;
 	width:8px;
 	display: inline-block; 
-	background: linear-gradient(to bottom, rgb(5,5,5) 0%, black 80%);
+	background: linear-gradient(to bottom, rgb(20,20,20) 0%, black 80%);
 }
 .sky-scraper-wrapper{
 	width:8300px;
@@ -137,17 +117,8 @@ $br: '6%';
 		overflow: hidden;
 		display: inline-block;
 		position: relative;
-		// margin-left: 1px;
-		// width: 130px;
-		// height: 270px;
-		// background: radial-gradient(ellipse at center, rgba(15,15,15,1) 0%,rgba(10,10,10,1) 100%);
-		// display: inline-block;
-		// // margin-left: 2px;
-		// border-top-right-radius: $br;
-		// border-top-left-radius: $br;
 	}
 	.baby-sky-scraper{
-		// margin-left: 7px;
 		width:8px;
 		height:110px;  
 		display: inline-block;
@@ -158,42 +129,14 @@ $br: '6%';
 		position: relative;
 	}
 	.black-sky-scraper{
-		// margin-left: 7px;
 		width:8px; 
 		display: inline-block;
-		background: linear-gradient(to bottom, rgb(10,10,10) 0%, black 70%);
+		background: linear-gradient(to bottom, rgb(36,44,55) 0%, black 80%);
 		border-top-right-radius: $br;
 		border-top-left-radius: $br;
 		position: relative;
 	}	
-	.baby-sky-scraper2{
-		// margin-left: 4px;
-		width:80px;
-		height:145px;
-		display: inline-block;
-		background-color: black;
-		background: radial-gradient(ellipse at center, rgba(33,33,33,1) 0%,rgba(5,5,5,1) 100%);
-		border-top-right-radius: $br;
-		border-top-left-radius: $br;
-	}		
-	.baby-sky-scraper3{
-		// margin-left: 12px;
-		width:80px;
-		height:170px;
-		display: inline-block;
-		background: radial-gradient(ellipse at center, rgba(33,33,33,1) 0%,rgba(5,5,5,1) 100%);
-		border-top-right-radius: $br;
-		border-top-left-radius: $br;
-	}			
-	.baby-sky-scraper4{
-		// margin-left: 5px;
-		width:90px;
-		height:230px;
-		display: inline-block;
-		background: radial-gradient(ellipse at center, rgba(25,25,25,1) 0%,rgba(1,1,1,1) 100%);
-		border-top-right-radius: $br;
-		border-top-left-radius: $br;
-	}		
+
 	div{
 		div:hover{
 		// animation: grow-taller 2s linear infinite;
@@ -631,10 +574,10 @@ $cloud-color:#f5f5f5;
 .moon{
 	position: absolute;
 	border-radius: 50%;
-	background: linear-gradient(to bottom, rgba(241,231,103,0.1) 0%, rgba(255,255,0,1) 100%);
+	background: linear-gradient(to top, rgba(241,231,103,0.1) 0%, rgba(255,255,0,1) 100%);
 	height: 95px;
 	width: 95px;
-	top: 30vh;
+	top: 32vh;
 	left: 45%
 }
 
