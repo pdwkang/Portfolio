@@ -20,12 +20,12 @@ class Project extends Component{
 						</div>
 					</div>
 				</div>
-				<div className='project-description'>Movie application that displays current 
-					playing movies, nearby theater ticketing through fandango, popular tv shows,                  
+				<div className='project-description'>Movie application that displays currently 
+					playing movies, nearby theater ticketing through Fandango, popular tv shows,                  
 					and a movie search query through <i>The Movie Data Base</i> API.
 				</div>
 				<div className='tag-wrapper'>
-					<div className='tag-header'>Tags</div>
+					<div className='tag-header'>Technologies used</div>
 					<div className='tags'>JavaScript</div>
 					<div className='tags'>HTML5</div>
 					<div className='tags'>CSS3</div>

@@ -26,10 +26,10 @@ class Project extends Component{
 						</div>
 					</div>
 				</div>
-				<div className='project-description'><i>Upd8ed</i> is a one-stop shop that provides the viewer with the latest business, entertainment, 
-				global, and sports news aggegated from over 60 different news sources</div>
+				<div className='project-description'><i>Upd8ed</i> is a one-stop shop that provides the visitor with the latest business, entertainment, 
+				global, and sports news aggregated from over 60 different news sources</div>
 				<div className='tag-wrapper'>
-					<div className='tag-header'>Tags</div>
+					<div className='tag-header'>Technologies used</div>
 					<div className='featured tags'>React.js</div>
 					<div className='featured tags'>React-Router</div>
 					<div className='featured tags'>NPM</div>
@@ -41,10 +41,13 @@ class Project extends Component{
 					<div className='tags'>Responsive Design</div>
 					<div className='tags'>jQuery</div>					
 					<div className='tags'>Ajax</div>
+					<div className='tags'>Git</div>
 					<div className='tags'>Yahoo Stock API</div>
 					<div className='tags'>Weather API</div>
 					<div className='tags'>News API</div>
 					<div className='tags'>Agile Development</div>
+					
+
 				</div>
 			</div>
 		)

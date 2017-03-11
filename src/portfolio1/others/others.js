@@ -11,8 +11,7 @@ class ProjectTab4 extends Component{
 						<div className='tags tag-small'>Node.js</div>
 						<div className='tags tag-small'>JavaScript</div>
 						<div className='hidden-xs tags tag-small'>Bootstrap</div>
-						<div className='tags tag-small'>Ajax</div>
-						<div className='tags tag-small'>' Responsive Design '</div>
+						<div className='tags tag-small'>Agile</div>
 						<div className='tag-line'></div>
 						<div className='live-demo'><a href='http://www.pauldkang.com/news' target="_blank"><div>DEMO</div></a></div>
 						<a target="_blank" href='https://github.com/mason0958/News-Aggregator'><div className='github-flag'>
@@ -100,7 +99,6 @@ class ProjectTab2 extends Component{
 				<div className='each-project-tags'>
 					<div className='tag-wrapper'>
 						<div className='tags tag3'>JavaScript</div>
-						<div className='tags tag3'>{'< Canvas >'}</div>
 						<div className='tags tag2'>HTML5</div>
 						<div className='tags tag1'>CSS3</div>
 						<div className='tag-line'></div>
@@ -191,9 +189,10 @@ class Others extends Component{
 				<div className='projects-image-wrapper row'>
 					<div className='portfolio-mid-line col-xs-12'></div>			
 					<div className='col-xs-12 col-sm-10 col-sm-offset-1 col-md-offset-0 col-md-6 each-projects-image'><ProjectTab4 onClick={this.onClick} target={this.state.target}/></div>
-					<div className='col-xs-12 col-sm-10 col-sm-offset-1 col-md-offset-0 col-md-6 each-projects-image'><ProjectTab1 onClick={this.onClick} target={this.state.target}/></div>
+					
 					<div className='col-xs-12 col-sm-10 col-sm-offset-1 col-md-offset-0 col-md-6 each-projects-image'><ProjectTab2 onClick={this.onClick} target={this.state.target}/></div>
 					<div className='col-xs-12 col-sm-10 col-sm-offset-1 col-md-offset-0 col-md-6 each-projects-image'><ProjectTab3 onClick={this.onClick} target={this.state.target}/></div>
+					<div className='col-xs-12 col-sm-10 col-sm-offset-1 col-md-offset-0 col-md-6 each-projects-image'><ProjectTab1 onClick={this.onClick} target={this.state.target}/></div>
 				</div>				
 				<div className='projects-place-holder row'></div>
 			</div>

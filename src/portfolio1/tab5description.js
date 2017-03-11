@@ -7,6 +7,7 @@ var cG = function(text){return <span className='sub-g'>{text}</span>};
 var cY = function(text){return <span className='sub-y'>{text}</span>};
 var cB = function(text){return <span className='sub-b'>{text}</span>};
 var cO = function(text){return <span className='sub-o'>{text}</span>};
+var cGR = function(text){return <span className='sub-gr'>{text}</span>};
 var cP = function(text){return <span className='sub-p'>{text}</span>};
 // var sp = function(number){var returnThis
 // 	for(let i = 0; i < number; i++){returnThis += '<span>{&nbsp;&nbsp;}</span>'}
@@ -30,10 +31,11 @@ class Tab5Description extends Component{
 						)
 					})}
 				</div>
-				<div className='col-sm-11'>
+				<div className='col-sm-10 col-md-11'>
 					<div> {imporT('React, { Component } from ', '"react"')}</div>
 					...<br/>...<br/>...<br/><br/><br/><br/>
-					<div>{cB('class')} Search {cR('extends')} Component {'{'}</div>
+					<div>{cGR('// Pure rendering function for each stock')} </div>
+					<div>{cB('class')} Stock {cR('extends')} Component {'{'}</div>
 					<div>&nbsp;&nbsp;{'render(){'}</div>
 					<div>&nbsp;&nbsp;&nbsp;&nbsp;{cR('return')}{'('}</div>
 					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('div')}{'>'}</div>
@@ -47,7 +49,7 @@ class Tab5Description extends Component{
 					<div>&nbsp;&nbsp;{'};'}</div>
 					<div>{'};'}</div>
 					<br/>
-					<div>{cR('export default')} Search; <span className='blinkTypeSomething'>|</span></div>
+					<div>{cR('export default')} Stock; <span className='blinkTypeSomething'>|</span></div>
 				</div>
 			</div>
 		)

@@ -11,7 +11,7 @@ class Home extends Component{
 				<div style={{position:'absolute', fontSize:17,fontFamily:'Libre Franklin', fontWeight:900, width:'100%',bottom:35, textAlign:'center'}}>This portfolio is built in React.js
 
 				</div>
-				<Link to="portfolio" spy={true} smooth={true} duration={1000} ><div className='arrow bounce'></div></Link>
+				<Link to="portfolio" spy={true} smooth={true} duration={1000} ><div className='arrow-wrapper'><div className='arrow bounce'></div></div></Link>
 			</div>
 		)
 	}

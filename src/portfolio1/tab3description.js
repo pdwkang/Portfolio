@@ -8,6 +8,7 @@ var cY = function(text){return <span className='sub-y'>{text}</span>};
 var cB = function(text){return <span className='sub-b'>{text}</span>};
 var cO = function(text){return <span className='sub-o'>{text}</span>};
 var cP = function(text){return <span className='sub-p'>{text}</span>};
+var cGR = function(text){return <span className='sub-gr'>{text}</span>};
 // var sp = function(number){var returnThis
 // 	for(let i = 0; i < number; i++){returnThis += '<span>{&nbsp;&nbsp;}</span>'}
 // 		return returnThis;
@@ -30,12 +31,13 @@ class Tab3Description extends Component{
 						)
 					})}
 				</div>
-				<div className='col-sm-11'>
+				<div className='col-sm-10 col-md-11'>
 					<div> {imporT('React, { Component } from ', '"react"')}</div>
 					<div> {imporT('StockSearch', '"./Stocks.js"')}</div>
 					...<br/>...<br/>...<br/><br/><br/><br/>
 
 					...<br/>...<br/>...<br/>
+					<div>{cGR('// Parent of all compponents on the business page')} </div>
 					<div>{cB('class')} Business {cR('extends')} Component {'{'}</div>
 					<div>&nbsp;&nbsp;{'render(){'}</div>
 					<div>&nbsp;&nbsp;&nbsp;&nbsp;{cR('return')}{'('}</div>

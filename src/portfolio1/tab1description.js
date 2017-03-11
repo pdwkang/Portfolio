@@ -7,6 +7,7 @@ var cG = function(text){return <span className='sub-g'>{text}</span>};
 var cY = function(text){return <span className='sub-y'>{text}</span>};
 var cB = function(text){return <span className='sub-b'>{text}</span>};
 var cP = function(text){return <span className='sub-p'>{text}</span>};
+var cGR = function(text){return <span className='sub-gr'>{text}</span>};
 var sp = function(number){
 	var returnThis
 	for(let i = 0; i < number; i++){
@@ -39,6 +40,7 @@ class Tab1Description extends Component{
 					<div> {imporT('Business', '"./business/Business.js"')}</div>
 					<div> {imporT('{ Router,Route,hasHistory,IndexRoute }', '"react-router"')}</div>
 					...<br/>...<br/>...<br/><br/>
+					<div>{cGR('// React-Router set up')} </div>
 					<div>ReactDOM.render(</div>
 					<div>&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('Router')} {cG('history')}{'='}{brc('hashHistory')}{'>'}</div>
 					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('Route')} {cG('component')}{'='}{brc('App')}{'>'}</div>

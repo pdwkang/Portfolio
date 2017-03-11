@@ -35,7 +35,7 @@
 }
 .w1, .w3, .w5,.w7,.w9,.w11{
 	left:10px;
-}
+} 
 .w2, .w4, .w6,.w8,.w10,.w12{
 	right:25px;
 }
@@ -169,14 +169,6 @@ $br: '6%';
 }
 
 
-
-#car{
-	z-index: 5;
-	padding-left: 40px;
-	margin-left: 27%;
-	background-color: transparent;
-	position: relative;
-}
 
 .upperPart{
 	height: 60px;
@@ -360,10 +352,41 @@ $br: '6%';
     animation: spin .2s infinite linear;
 }
 
+
+#car{
+	z-index: 5;
+	padding-left: 40px;
+	margin-left: 27%;
+	background-color: transparent;
+	position: relative;
+	// animation: backAndForth
+}
+// @keyframes backAndForth{
+// 	0%{
+// 		margin-left: 50%;
+// 	}
+// 	50%{
+// 		margin-left: 15%
+// 	}
+// 	100%{
+// 		margin-left: 50%;
+// 	}	
+// }
 .moveUp {
     animation: moveUp .4s infinite linear;
 }
 
+@keyframes moveUp {
+    0% {
+	margin-top: 10px;
+    }
+    50% {
+	margin-top: 15px;
+    }
+    100% {
+	margin-top: 10px;
+    }
+}
 @keyframes spin {
     100% {
         transform:rotate(-360deg);
@@ -381,17 +404,7 @@ $br: '6%';
 	}
 }
  
-@keyframes moveUp {
-    0% {
-	margin-top: 10px;
-    }
-    50% {
-	margin-top: 15px;
-    }
-    100% {
-	margin-top: 10px;
-    }
-}
+
 
 .rim-inside{
 	position: absolute;

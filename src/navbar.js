@@ -29,13 +29,16 @@ var NavBar = React.createClass({
 	    			<Navbar.Collapse>
 	      				<Nav pullRight>
 	        				<NavItem eventKey={1} href="/">
-	        					<div className='each-nav'><Link style={{color:'white', textDecoration:'none'}} to="home" spy={true} smooth={true} duration={500} ><div className='each-nav-child'>Home</div></Link></div>
+	        					<div className='each-nav'><Link style={{color:'white', textDecoration:'none'}} to="home" spy={true} smooth={true} duration={700} ><div className='each-nav-child'>Home</div></Link></div>
 	        				</NavItem>
 	        				<NavItem eventKey={2} href="/">
-	        					<div className='each-nav'><Link style={{color:'white', textDecoration:'none'}} to="portfolio" spy={true} smooth={true} duration={500} ><div className='each-nav-child'>Portfolio</div></Link></div>
+	        					<div className='each-nav'><Link style={{color:'white', textDecoration:'none'}} to="portfolio" spy={true} smooth={true} duration={700} ><div className='each-nav-child'>Projects</div></Link></div>
 	        				</NavItem>
+	        				<NavItem eventKey={2} href="/">
+	        					<div className='each-nav'><Link style={{color:'white', textDecoration:'none'}} to="skills" spy={true} smooth={true} duration={700} ><div className='each-nav-child'>Skills</div></Link></div>
+	        				</NavItem>	        				
 							<NavItem eventKey={3} href="/">
-	        					<div className='each-nav'><Link style={{color:'white', textDecoration:'none'}} to="contact" spy={true} smooth={true} duration={500} ><div className='each-nav-child'>Contact</div></Link></div>
+	        					<div className='each-nav'><Link style={{color:'white', textDecoration:'none'}} to="contact" spy={true} smooth={true} duration={800} ><div className='each-nav-child'>Contact</div></Link></div>
 	        				</NavItem>
 	      				</Nav>
 	    			</Navbar.Collapse>

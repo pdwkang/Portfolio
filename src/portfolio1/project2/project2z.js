@@ -22,10 +22,10 @@ class Project extends Component{
 				</div>
 
 				<div className='project-description'>
-					<i>Eating Nemo</i> is a Shark role playing game created in native javascript that includes two game modes: Feeding Frenzy (Normal) and 2D Shooting Mode (Boss)
+					<i>Eating Nemo</i> is a shark role playing game created in native javascript that includes two game modes: Feeding Frenzy (Normal) and 2D Shooting Mode (Boss)
 				</div>
 				<div className='tag-wrapper'>
-					<div className='tag-header'>Tags</div>
+					<div className='tag-header'>Technologies used</div>
 					<div className='tags'>JavaScript</div>
 					<div className='tags'>{'< Canvas >'}</div>
 					<div className='tags'>HTML5</div>

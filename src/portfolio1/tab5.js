@@ -24,7 +24,7 @@ class Tab5 extends Component{
 		return(
 			<div onClick={this.onClick} className={tabClass} >
 				<div className='hidden-sm' style={{backgroundColor:backgroundColor, borderLeft: borderColor, borderRight: borderColor, borderTop: borderColor, borderBottom: borderBottom, padding:'3px 10px'}}>
-				Search.js
+				Stock.js
 				</div>
 			</div>
 		)

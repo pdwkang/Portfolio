@@ -24,7 +24,7 @@ class Project extends Component{
 				application featuring a game log of user activity, memory match 
 				game for bonus coins, and animated dragons. </div>
 				<div className='tag-wrapper'>
-					<div className='tag-header'>Tags</div>
+					<div className='tag-header'>Technologies used</div>
 					<div className='tags'>JavaScript</div>
 					<div className='tags'>HTML5</div>
 					<div className='tags'>CSS3</div>

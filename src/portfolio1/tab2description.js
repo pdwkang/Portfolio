@@ -7,6 +7,7 @@ var cG = function(text){return <span className='sub-g'>{text}</span>};
 var cY = function(text){return <span className='sub-y'>{text}</span>};
 var cB = function(text){return <span className='sub-b'>{text}</span>};
 var cO = function(text){return <span className='sub-o'>{text}</span>};
+var cGR = function(text){return <span className='sub-gr'>{text}</span>};
 // var cP = function(text){return <span className='sub-p'>{text}</span>};
 // var sp = function(number){var returnThis
 // 	for(let i = 0; i < number; i++){returnThis += '<span>{&nbsp;&nbsp;}</span>'}
@@ -16,7 +17,7 @@ var cO = function(text){return <span className='sub-o'>{text}</span>};
 // var par = function(text){return <span>{'('}{text}{')'} </span>}
 // var lc = function(number){return <div className='col-sm-1 line-count'>{number}</div>};
 var numbers = []
-for(let i = 1; i < 31; i++){
+for(let i = 1; i < 35; i++){
 	numbers.push(i)
 }
 class Tab2Description extends Component{
@@ -30,9 +31,11 @@ class Tab2Description extends Component{
 						)
 					})}
 				</div>
-				<div className='col-sm-11'>
-					<div> {imporT('React, { Component } from ', '"react"')}</div>
-					<div> {imporT('{ Link }', '"react-router"')}</div><br/>
+				<div className='col-sm-10 col-md-11'>
+					<div>{imporT('React, { Component } from ', '"react"')}</div>
+					<div>{imporT('{ Link }', '"react-router"')}</div><br/>
+					<br/>
+					<div>{cGR('// Change routes, on click of navigation bar')} </div>
 					<div>{cB('class')} ToggleRoutes {cR('extends')} Component {'{'}</div>
 					<div>&nbsp;&nbsp;{'constructor(props) { '}</div>
 					<div>&nbsp;&nbsp;&nbsp;&nbsp;{cO('super')}{'(props);'}</div>
@@ -49,6 +52,7 @@ class Tab2Description extends Component{
 					<div>&nbsp;&nbsp;&nbsp;&nbsp;{')'}</div>
 					<div>&nbsp;&nbsp;{'};'}</div>
 					<div>{'};'}</div>
+					<br/>
 					<br/>
 					<div>{cB('class')} App {cR('extends')} React{'.'}Component {'{'}</div>
 					<div>&nbsp;&nbsp;{'render() {'}</div>

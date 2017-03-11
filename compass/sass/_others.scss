@@ -17,14 +17,30 @@
 				// background-color: white;
 				box-shadow:1px 1px 1px 1px rgba(0,0,0,1);
 				.each-project-header{
-					height:25px;
+					height:50px;
 					width:100%;
 					// background-color: #AD702E;
-					background: linear-gradient(to bottom, rgba(255,255,255,0.6) 1%, white 100%);		
+					// background: linear-gradient(to bottom, rgba(255,255,255,0.6) 1%, white 100%);		
 					font-size:18px;
-					font-family: "Anton";
-					line-height:25px;
+					font-family: "Libre Franklin";
+					line-height:50px;
 					text-align: center;
+					color:white;
+background: #2E3641;
+border-bottom:3px white solid;
+		padding:15 0px;
+		// padding-top: 5px;
+		// border-radius: 2%;
+		// border-top-left-radius: 2%;	
+		// border-bottom-left-radius: 2%;	
+		// margin-right:2%;
+		// margin-left:1%;
+		// min-width:31%;
+		// display: inline-block;
+		// margin-bottom: 10px;
+		// border: 1px solid #E8E8E8;
+		// box-shadow:0px 3px 3px 0px rgba(0,0,0,0.05);
+		// box-shadow:4px 8px 5px 0px rgba(0,0,0,.4);					
 				}
 				img{
 					width:100%;
@@ -74,9 +90,9 @@
 						}						
 						.github-flag{
 							position: absolute;
-							top:2%;
-							right:3%;
-							padding-top:50px;
+							top:0;
+							right:1%;
+							padding-top:20px;
 							img{
 								width:70px; 
 								height:0;
@@ -98,6 +114,9 @@
 				opacity: .35
 
 			};
+			.each-project-header{
+				opacity: 0;
+			}
 			.each-project-tags{
 				display: block;
 				position: absolute;
@@ -125,9 +144,10 @@
 					}	
 					.github-flag{
 						position: absolute;
-						top:2%;
-						right:3%;
-						padding-top:50px;
+						top:0;
+						right:1%;
+						padding-top:25px;
+						padding-bottom: 20px;
 						animation: githubflag 1.2s linear;
 						height:130px;
 						img{
@@ -171,63 +191,73 @@
 
 
 @keyframes tag-animation{
-	0%{
-		margin-top: 10%;
-	}
-	30%{
-		margin-top:25%;
-	}
-	40%{
-		margin-top:22%;
-	}
-	50%{
+	// 0%{
+	// 	margin-top: 10%;
+	// }
+	// 30%{
+	// 	margin-top:25%;
+	// }
+	// 40%{
+	// 	margin-top:22%;
+	// }
+	// 50%{
 
-		margin-top:25%;
-	}
-	60%{
-		margin-top:23%;
-	}	
-	70%{
+	// 	margin-top:25%;
+	// }
+	// 60%{
+	// 	margin-top:23%;
+	// }	
+	// 70%{
 
-		margin-top:25%;
-	}
-	80%{
-		margin-top:24%;
-	}				
-	90%{
-		margin-top:25%;
-	}		
+	// 	margin-top:25%;
+	// }
+	// 80%{
+	// 	margin-top:24%;
+	// }				
+	// 90%{
+	// 	margin-top:25%;
+	// }		
 }
 @keyframes borderlonger{
 	0%{
-		width: 0;
+		width: 95%;
 	}
-	40%{
-		width: 0;
-	}
-	80%{
+	// 40%{
+	// 	width: 0;
+	// }
+	100%{
 		width: 95%;
 	}
 }
 @keyframes githubflag{
 	0%{
-		height: 0;
+		width:90px;
+		height: 130px;	
 	}
-	40%{
-		height: 0;
-	}
-	80%{
+	// 40%{
+		// height: 0;
+	// }
+	100%{
 		width:90px;
 		height: 130px;
 	}
 }
-
+.github-main{
+	animation: tiltflag 0.4s linear;	
+	position: absolute;
+	bottom: -100px;
+	right:-5px;
+	width:90px;
+	height:100px;
+	// z-index:99;
+	opacity: 1;
+}
 .github-main:hover{
 	// filter:brightness(130%);
 	animation: tiltflag 0.45s linear;	
 	// transform:rotate(10deg);
 	transition: opacity 0.34s;
-	opacity: 1;
+	opacity: .4;
 }
 .laptop-screen-project:hover{
 
@@ -243,7 +273,7 @@
 		color:black;
 		font-family: 'Bowlby One SC';
 		letter-spacing: 1px;
-		font-size: 20px;
+		font-size: 18px;
 	}
 }
 .laptop-screen-project{
@@ -259,14 +289,5 @@
 		display: none;
 	}
 }
-.github-main{
-	animation: tiltflag 0.4s linear;	
-	position: absolute;
-	bottom: -100px;
-	right:0;
-	width:90px;
-	height:100px;
-	// z-index:99;
-	opacity: .4
-}
+
 

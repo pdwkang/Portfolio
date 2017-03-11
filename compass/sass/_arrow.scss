@@ -12,18 +12,19 @@
   }
 }
 
-
-.arrow {
+.arrow-wrapper{
   position: absolute;
-  bottom: 1px;
-  left: 46%;
+  left:50%;
+  bottom:1px;
+}
+.arrow {
   width: 55px;
   height: 55px;
   opacity: .4;
-  // background-image: url('https://cdn3.iconfinder.com/data/icons/fav-optimized-16px/512/arrow-down-download-load-file-archive-128.png');
   background-image: url('../src/home/arrow.png');
   background-size: contain;
   filter:brightness(350%);
+  margin-left: -50%;
 }
 .arrow:hover{
   cursor: pointer;

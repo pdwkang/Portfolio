@@ -7,6 +7,7 @@ var cG = function(text){return <span className='sub-g'>{text}</span>};
 var cY = function(text){return <span className='sub-y'>{text}</span>};
 var cB = function(text){return <span className='sub-b'>{text}</span>};
 var cO = function(text){return <span className='sub-o'>{text}</span>};
+var cGR = function(text){return <span className='sub-gr'>{text}</span>};
 var cP = function(text){return <span className='sub-p'>{text}</span>};
 // var sp = function(number){var returnThis
 // 	for(let i = 0; i < number; i++){returnThis += '<span>{&nbsp;&nbsp;}</span>'}
@@ -30,9 +31,9 @@ class Tab4Description extends Component{
 						)
 					})}
 				</div>
-				<div className='col-sm-11'>
+				<div className='col-sm-10 col-md-11'>
 					<div> {imporT('React, { Component } from ', '"react"')}</div>
-					<div> {imporT('SearchResult', '"./Search.js"')}</div>
+					<div> {imporT('Stock', '"./Stock.js"')}</div>
 					...<br/>...<br/>...<br/><br/><br/><br/>
 					<div>{cB('class')} StockSearch {cR('extends')} Component {'{'}</div>
 					<div>&nbsp;&nbsp;{'constructor(props) { '}</div>
@@ -41,13 +42,15 @@ class Tab4Description extends Component{
 					<div>&nbsp;&nbsp;&nbsp;&nbsp;{cO('this')}{'.changeStock'} {cR('=')} {cO('this')}{'.changeStock.bind('}{cO('this')}{')'} </div>
 					<div>&nbsp;&nbsp;&nbsp;&nbsp;{cO('this')}{'.componentDidMount'} {cR('=')} {cO('this')}{'.componentDidMount.bind('}{cO('this')}{')'} </div>
 					<div>&nbsp;&nbsp;{'};'}</div>
+					<div>&nbsp;&nbsp;{cGR('// Make ajax call and save it in state')} </div>
 					<div>&nbsp;&nbsp;{'componentDidMount(){'}</div>
 					<div>&nbsp;&nbsp;&nbsp;&nbsp;{'$.'}{cB('getJSON')}{'(stockUrl, ('}{cO('stockData')}{')'} {cB('=>')} {'{'}</div>
 					<div>&nbsp;&nbsp;&nbsp;&nbsp;{cO('this')}{'.setState({stock: stockData})'}</div>
 					<div>&nbsp;&nbsp;{'});'}</div>
 					<div>&nbsp;&nbsp;{'render(){'}</div>
 					<div>&nbsp;&nbsp;&nbsp;&nbsp;{cR('return')}{'('}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('Search')} {cG('stock')} {'= {'}{cO('this')}{'.state.stock} />'}</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{cGR('// Send saved data to its children as props')} </div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('Stock')} {cG('stock')} {'= {'}{cO('this')}{'.state.stock} />'}</div>
 					<div>&nbsp;&nbsp;&nbsp;&nbsp;{')'}</div>
 					<div>&nbsp;&nbsp;{'};'}</div>
 					<div>{'};'}</div>

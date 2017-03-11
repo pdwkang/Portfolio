@@ -46,32 +46,37 @@ class MyForm extends Component {
   				</div> 
 				*/}
 				<div className='row'>
-					<div className='about-me-description col-lg-5 col-md-6 col-sm-7 col-xs-11'>
+					<div className='about-me-description col-lg-6 col-md-6 col-sm-11 col-xs-11'>
 						<div className='actual-text'>
-							<span className='hidden-xs'>
-							I{"'"}m a web developer based in Atlanta. 
+							I am a web developer based in Atlanta. 
 							<br/><br/>
-							</span>
-							I received a Psychology degree from UGA 
-							prior to discovering my passion for coding. 
-							This led me to join DigitalCrafts, a 16-week immersive coding bootcamp.
+							I received a Psychology degree from the University of Georgia
+							prior to discovering my passion for coding. Although studying the 
+							human mind was intresting, I quickly fell in love with the mind of a computer and the idea of 
+							being able to create anything from scratch.
 							<br/><br/>
+							
+							This led me to join DigitalCrafts, a 16-week immersive coding bootcamp, where
+							I trained to become a full stack developer. I enjoy being challenged everyday,
+							and it truly is the greatest feeling to solve a problem after hours of work put into it.
 							<span className='hidden-xs'>
-							When I{"'"}m not coding, I memorize useless NBA stats or 
-							spend time on the golf course looking for my own balls. 
+							<br/><br/>
+							Besides coding, I{"'"}m interested in golf, traveling, and all things NBA.
 							<br/><br/></span>
 							Contact me ! &nbsp;&nbsp;&nbsp;
-							<span>(706) 424-0364</span>
-							<div className='visible-xs'>paulkangdev@gmail.com</div>
+							<br/>
+							<div style={{display:'inline-block',width:'50%'}}>(706) 424-0364</div>
+							<div style={{display:'inline-block',width:'50%', textAlign:'right'}}>paulkangdev@gmail.com</div>
+							
 						</div>
-						
 					</div>
 				</div>
 				<div></div>
   				<div className='row'>
   					<div className='linkz'><a target="_blank" href='https://github.com/pdwkang'><img src={require('./github.png')} alt='a' /></a></div>
   					<div className='linkz'><a target="_blank" href='https://www.linkedin.com/in/paul-kang-373820131'><img src={require('./linkedin.png')} alt='a' /></a></div>
-  					<div className='linkz'><a href='mailto:paulkangdev@gmail.com'><img src={require('./email.png')} alt='a' /></a></div>
+  					<div className='hidden-xs linkz'><a href='mailto:paulkangdev@gmail.com'><img src={require('./email.png')} alt='a' /></a></div>
+  					<div className='linkz'><a href={require("../../public/PaulKangResume.pdf")} target="_blank">Resume</a></div>
 				</div>
   			</form>			
 		)
