@@ -50,12 +50,14 @@ class MyForm extends Component {
 						<div className='actual-text'>
 							I am a web developer based in Atlanta. 
 							<br/><br/>
-							I received a Psychology degree from the University of Georgia
+							While being an American citizen, I served my mother country as an ATCIS-R operator (ROKA Geolocation <span className='glyphicon glyphicon-map-marker'></span> Tool ) in the Korean Army. 
+							I gained IT experience and exposure to internet / intranet data flow as well as deductive reasoning by designing defensive operations.
+							<br/><br/>
+							I received a Psychology degree from the University of Georgia &nbsp;<span className='glyphicon glyphicon-education'></span>&nbsp; 
 							prior to discovering my passion for coding. Although studying the 
 							human mind was intresting, I quickly fell in love with the mind of a computer and the idea of 
-							being able to create anything from scratch.
+							being able to create anything from scratch. 
 							<br/><br/>
-							
 							This led me to join DigitalCrafts, a 16-week immersive coding bootcamp, where
 							I trained to become a full stack developer. I enjoy being challenged everyday,
 							and it truly is the greatest feeling to solve a problem after hours of work put into it.

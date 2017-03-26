@@ -5,7 +5,7 @@ class Project extends Component{
 	render(){
 		return(
 			<div>
-				<div className='upd8ed-header'>Eating Nemo, Canvas Game</div>
+				<div className='upd8ed-header'>Eat<span style={{color:'#BF360C'}}>i</span>ng N<span style={{color:'#BF360C'}}>e</span>m<span style={{color:'#BF360C'}}>o</span>, Canvas Game</div>
 				<div className='project-image' style={{width:'93%', position:'relative'}}>
 					<div className='project-image-div'>
 						<a className='laptop-screen-project' target="_blank" href='http://www.pauldkang.com/nemo'>
@@ -22,7 +22,7 @@ class Project extends Component{
 				</div>
 
 				<div className='project-description'>
-					<i>Eating Nemo</i>&nbsp; is a shark role playing game created in native javascript that includes two game modes: Arcade Mode (Normal) and 2D Shooting Mode (Boss)
+					<i>Eating Nemo</i> is a shark role playing game created in native javascript that includes two game modes: Feeding Frenzy (Normal) and 2D Shooting Mode (Boss)
 				</div>
 				<div className='tag-wrapper'>
 					<div className='tag-header'>Technologies used</div>

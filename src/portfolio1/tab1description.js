@@ -45,11 +45,11 @@ class Tab1Description extends Component{
 					<div>&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('Router')} {cG('history')}{'='}{brc('hashHistory')}{'>'}</div>
 					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('Route')} {cG('component')}{'='}{brc('App')}{'>'}</div>
 					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('IndexRoute')} {cG('component')}{'='}{brc('General')} {'/>'}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('Route')} {cG('path')}{'='}{brc('entertainment')} {cG('component')}{'='}{brc('Entertainment')} {'/>'}</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('Route')} {cG('path')}{'='}{brc('entr')} {cG('component')}{'='}{brc('Entr')} {'/>'}</div>
 					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('Route')} {cG('path')}{'='}{brc('sports')} {cG('component')}{'='}{brc('Sports')}{'/>'}</div>
 					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('Route')} {cG('path')}{'='}{brc('business')} {cG('component')}{'='}{brc('Business')}{'/>'}</div>
 					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('Route')} {cG('path')}{'='}{brc('global')} {cG('component')}{'='}{brc('Global')}{'/>'}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('Route')} {cG('path')}{'='}{brc('search/:input')} {cG('component')}{'='}{brc('SearchResults')} {'/>'}</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'<'}{cR('Route')} {cG('path')}{'='}{brc('search/:input')} {cG('component')}{'='}{brc('Search')} {'/>'}</div>
 					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'</'}{cR('Route')}{'>'}</div>
 					<div>&nbsp;&nbsp;&nbsp;&nbsp;{'</'}{cR('Router')}{'>'},</div>
 					<div> {cB("document.getElementById")}{par(cY('"root"'))}</div>

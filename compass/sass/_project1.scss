@@ -4,15 +4,15 @@
 	height:100vh;
 	// overflow: auto;
 	padding-left:3vw;
-	padding-top:70px;
+	padding-top:80px;
 	margin:0;
 	// overflow: hidden;
 	box-shadow: inset 5px -2px 10px rgba(0,0,0,.4);
 	// box-shadow: inset 0px 0px 25px rgba(0,0,0,.4);
 	.upd8ed-header{
-		font-size: 25px;
-		font-family: 'Anton';
-		letter-spacing: .5px;
+		font-size: 27px;
+		font-family: 'Passion One';
+		// letter-spacing: .5px;
 		margin-bottom: 10px;
 
 		.featured-github-link{
@@ -60,25 +60,7 @@
 	margin:3% 6% 3% 0;
 	padding-right: 74px;
 }
-// .project-image:hover{	
-// 	cursor:pointer;
-// 	overflow: hidden;
-// 	.project-image-div{
-// 		animation: hoverProject .3s linear;
-// 		opacity: .3;
-//   		transform: scale(1.1);
-// 	}
 
-// 	.show-on-hover{
-// 		display: block;
-// 		.project-link{
-// 		}
-// 		.project-link:hover{
-
-// 		}		
-// 	}
-
-// }
 
 @keyframes hoverProject{
 	0%{
@@ -97,8 +79,8 @@
 	width:90%;
 	margin:2% 1% 2% 0;
 	.tag-header{
-		font-family: 'Anton';
-		font-size: 17px;
+		font-family: 'Passion One';
+		font-size: 19px;
 		width:97%;
 		margin-bottom:4px;
 		border-bottom:#272822 3px solid;
@@ -114,21 +96,28 @@
 		padding: 3px 5px;
 		font-size: 13px
 	}
+	.featured.tags{
+		border: 2px solid rgb(50,0,0);
+		background-color:rgb(250,50,50);
+		margin:1px;
+		color:white
+	}
 }
 
 // $arrow-color:#5A5A58;
 // $arrow-color:rgba(40,40,40,0.35);
 $arrow-color:white; 
+$margin-top-headers: 40px;
 .tab-wrapper{ 
 
 	min-margin-left: 20px;
-	margin-top: 30px;
+	margin-top: $margin-top-headers;
 	background-color: $arrow-color;
 	height:40px;
 	font-size: 16px;
 	line-height: 35px;	
 	position: relative;
-	width:135px;
+	width:155px;
 	border:none;
 	border-bottom: 2px rgba(0,0,0,.4) solid;
 	color:grey;
@@ -163,7 +152,7 @@ $arrow-color2:#2E3641;
 
 .selected-tab{
 	min-margin-left: 20px;
-	margin-top: 30px;
+	margin-top: $margin-top-headers;
 	background-color: $arrow-color2;
 	height:40px;
 	font-size: 16px;
@@ -348,3 +337,4 @@ $project-header-color: #2E3641;
 		box-shadow:0px 8px 10px 0px rgba(0,0,0,.3);
 	}
 }
+

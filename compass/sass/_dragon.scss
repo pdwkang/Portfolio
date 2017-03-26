@@ -1,0 +1,35 @@
+.dragon{
+	z-index: 200;
+	position: absolute;
+	top: 100px;
+	left: 0px;
+	height: 240px;
+	width: 240px;
+	background: url("../src/portfolio1/project4/dragon.png");
+	background-size: 2412px 1074px;
+	background-position: 0px 960px;
+	animation: fly 1s steps(8) infinite;
+}
+@keyframes fly{
+	100%{
+		background-position: -2015px 960px;
+	}
+}
+.fly-dragon{
+	z-index: 200;
+	position: absolute;
+	animation: fly-right 20s linear infinite;	
+}
+@keyframes fly-right{
+	0%{
+		top: 330px;
+		left: -200px;
+	}
+	50%{
+		top: 200px;
+	}
+	100%{
+		top: 00px;
+		left: 1300px;
+	}
+}

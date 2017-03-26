@@ -225,9 +225,33 @@ class BuildingSet extends Component{
 	}
 }// <div style={{width:500, bottom:5, position:'absolute', height:50, backgroundColor:'rgba(0, 0, 0, 0.9)'}}></div>					
 class Car extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			animation: 'Turn Off Animation',
+			animationClass: 'car-wrapper'
+		}
+		this.stopAnimation = this.stopAnimation.bind(this)
+	}
+	stopAnimation(){
+		if(this.state.animation == 'Turn Off Animation'){
+			this.setState({
+				animation: 'Animate Page',
+				animationClass: 'car-wrapper stopAnimation'
+			})
+		}else{
+			this.setState({
+				animation: 'Turn Off Animation',
+				animationClass: 'car-wrapper'
+			})			
+		}
+	}
 	render(){
 		return(
-			<div className='car-wrapper'>
+			<div className={this.state.animationClass}>
+				<div className='btn animation-button' onClick={this.stopAnimation}>
+					{this.state.animation}
+				</div>
 				<div className='background-car'>
 					<div style={{width:'100%',position:'relative'}}>
 						<div className='bat-man'></div>
