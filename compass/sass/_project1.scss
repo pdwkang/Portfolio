@@ -360,11 +360,15 @@ $project-header-color: #2E3641;
 	padding-right: 40px;
 	.col-sm-3{
 		.each-movie-poster{
-			img{width:100%}
+			img{width:100%;height:100%;}
 		}
 	}
 }
 
 .btn-primary:hover{
 	opacity: 0.8;
+}
+
+.slider-frame{
+	height:9vw !important;
 }

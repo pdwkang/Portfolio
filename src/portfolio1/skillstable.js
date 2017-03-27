@@ -54,17 +54,17 @@ class SkillsTable extends Component{
 				<div className='back-end'>
 					<div className='back-end-header'>Back-End</div>
 					<div className='each-skill '>Node.js &nbsp; / &nbsp; NPM</div>
-					<div className='each-skill s2'>Express &nbsp; / &nbsp; MySql &nbsp; / &nbsp; REST API </div>
+					<div className='each-skill s2'>Express &nbsp; / &nbsp; MySql &nbsp; / &nbsp; RESTful API </div>
 					<div className='each-skill'>Python</div>
-					<div className='each-skill s2'>AWS &nbsp; / &nbsp; EC2</div>
-					<div className='each-skill'>&nbsp;</div>
+					<div className='each-skill s2'>AWS &nbsp; / &nbsp; EC2 </div>
+					<div className='each-skill'>Apache</div>
 				</div>
 				<div className='in-progress hidden-xs'>
 					<div className='in-progress-header'>Development Tools</div>
 					<div className='each-skill'>Git &nbsp; / &nbsp; SourceTree </div>				
-					<div className='each-skill'>Photoshop &nbsp;/&nbsp; Sketch</div>
-					<div className='each-skill'>&nbsp;</div>
-					<div className='each-skill s2'>&nbsp;</div>
+					<div className='each-skill'>FileZilla &nbsp; / &nbsp; Sequel Pro</div>					
+					<div className='each-skill s2'>Wordpress &nbsp; / &nbsp; MAMP PRO </div>
+					<div className='each-skill'>Photoshop &nbsp; / &nbsp; Sketch</div>
 					<div className='each-skill'>&nbsp;</div>
 				</div>
 				<div> &nbsp;</div><div> &nbsp;</div><div> &nbsp;</div>

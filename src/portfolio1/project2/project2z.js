@@ -22,11 +22,11 @@ class Project extends Component{
 	render(){
 		return(
 			<div>
-				<div className='upd8ed-header'>Eating Nemo, Canvas Game &nbsp;&nbsp;&nbsp;<a style={{fontSize:16, fontFamily:'Libre Franklin'}} href='https://www.youtube.com/watch?v=2Ok6tEpgFLc&feature=youtu.be'>Video Link</a></div>
+				<div className='upd8ed-header'>Eating Nemo, Canvas Game &nbsp;&nbsp;&nbsp;<a style={{fontSize:16, fontFamily:'Libre Franklin'}} target='_blank' href='https://youtu.be/2Ok6tEpgFLc'>Video Link</a></div>
 				<div className='project-image' style={{width:'93%', position:'relative'}}>
 					<div className='project-image-div'>
 						<a className='laptop-screen-project' target="_blank" href='http://www.pauldkang.com/nemo'>
-							<ReactPlayer width='100%' height='300px' url='https://www.youtube.com/watch?v=2Ok6tEpgFLc&feature=youtu.be' playing />
+							<video width="100%" controls src={require("./nemo-10s.mp4")} type="video/mp4" autoPlay loop/>
 							<div className='show-me-on-hover'>Visit Website</div>
 						</a>
 						<div className='github-main'>	

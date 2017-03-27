@@ -184,11 +184,10 @@ class Portfolio1 extends Component{
 						<br/>
 						<ProjectTitle5 onClick={this.onClick} target={this.state.projectTarget}/>  {/* new story */}
 						<ProjectTitle1 onClick={this.onClick} target={this.state.projectTarget}/>  {/* updated */}
-						<ProjectTitle6 onClick={this.onClick} target={this.state.projectTarget}/>  {/* pygame */}
-						<ProjectTitle4 onClick={this.onClick} target={this.state.projectTarget}/>  {/* blackjack */}
 						<ProjectTitle3 onClick={this.onClick} target={this.state.projectTarget}/>  {/* movie */}
+						<ProjectTitle4 onClick={this.onClick} target={this.state.projectTarget}/>  {/* blackjack */}
+						<ProjectTitle6 onClick={this.onClick} target={this.state.projectTarget}/>  {/* pygame */}
 						<ProjectTitle2 onClick={this.onClick} target={this.state.projectTarget}/>  {/* nemo */}
-						<ProjectTitleComingSoon/>
 					</div>
 					{this.state.projectDescription}
 				</div>

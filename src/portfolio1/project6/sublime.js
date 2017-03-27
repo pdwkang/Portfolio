@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import Tab1 from './tab1'
-import Tab2 from './tab2'
-import Tab3 from './tab3'
 import Tab1Description from './tab1description'
 
 
@@ -40,8 +38,6 @@ class Code extends Component{
 					</div>
 					<div className='tabs'>
 						<Tab1 onClick={this.onClick} target={this.state.target}/>
-						<Tab2 onClick={this.onClick} target={this.state.target}/>
-						<Tab3 onClick={this.onClick} target={this.state.target}/>
 					</div>
 				</div>
 				<div className={this.state.descriptionClass}>

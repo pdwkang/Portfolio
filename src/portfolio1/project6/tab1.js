@@ -24,7 +24,7 @@ class Tab1 extends Component{
 		return(
 			<div onClick={this.onClick} className={tabClass} >
 				<div style={{backgroundColor:backgroundColor, borderLeft: borderColor, borderRight: borderColor, borderTop: borderColor, borderBottom: borderBottom, padding:'3px 10px'}}>
-				Upload.js
+				Main.py
 				</div>
 			</div>
 		)

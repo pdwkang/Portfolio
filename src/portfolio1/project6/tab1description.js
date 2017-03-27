@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 
-var imporT = function(what, from){return <div><span className='sub-r'>import</span> {what} from <span className='sub-y'>{from}</span>;</div>}
+var imporT = function(from, what){return <div><span className='sub-r'>from</span> {from} <span className='sub-r'>import</span> {what};</div>}
 var cR = function(text){return <span className='sub-r'>{text}</span>};
 var cG = function(text){return <span className='sub-g'>{text}</span>};
 var cY = function(text){return <span className='sub-y'>{text}</span>};
@@ -35,35 +35,32 @@ class Tab1Description extends Component{
 					})}
 				</div>
 				<div className='col-sm-10 col-md-11'>
-					<div>{cGR('// Make a post request to upload video')} </div>
-					<div>app{'.'}controller{'('}{cY("'uploadVideoController'")}, {cB('function')}({cR('$')}scope, {cR('$')}location, {cR('$')}http){'{'}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;{cR('$')}scope{'.'}{cG('upload')} {cR('=')} {cB('function')}(){'{'}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{cB('var')} formData {cR('=')} {cR('new')} {cG('FormData')};</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{cR('for')}(key {cR('in $')}scope{'.'}product){'{'}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;formData{'.'}append(key, {cR('$')}scope{'.'}product{'[key])'}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'}'}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{cB('var')} file {cR('=')} {cR('$')}({cY("'#file'")}){'[0].files[0];'}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;formData{'.'}append({cY("'video'")}, file);</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;formData{'.'}append({cY("'familyName'")}, {cR('$')}scope{'.'}familyName);</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{cGR('// Send video file and family name string to backend')}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{cR('$')}http{'.post('}{cY('http://backend/videos')}, formData, {'{'}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{cGR('// Transform data which is defaulted to JSON')}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;transfromRequest: angular{'.'}identity,</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;headers: {'{'}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{cY("'Content-Type'")} : {cP('undefined')}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'}'}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'}).then('}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{cB('function')} {cG('successFunction')}({cO('data')}){'{'}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{cGR('// Route to list of videos after uploading')}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{cR('$')}location{'.'}path({cY("'/videosToTranslate'")})</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'},'}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{cB('function')} {cG('failedFunction')}({cO('data')}){'{'}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{cGR('// Show message on DOM if upload failed')}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{cR('$')}scope{'.'}failedUpload {cR('=')} {cY("'Try Again'")}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{'}'}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{')'}</div>
-					<div>&nbsp;&nbsp;&nbsp;&nbsp;{'}'}</div>
-					<div>{'});'} <span className='blinkTypeSomething'>|</span></div>
+					<div>{cR('import')} pygame</div>
+					<div>{imporT('pygame.sprite', 'Group, groupcollide')}</div>
+					<div>{imporT('settings', 'Settings')}</div>
+					<div>{imporT('background', 'Background')}</div>
+					<div>{cR('import')} time</div>
+					<div>pygame{'.'}{cB('init')}();</div>
+					...<br/>...<br/>...<br/><br/>
+					<div>enemies {cR('=')} {cB('Group')}();</div>
+					<div>screen {cR('=')} {'pygame.display.'}{cB('set_mode')}{'(Settings.screen_size);'}</div>
+					<br/>
+					<div>{cB('def')} {cG('run_game')}():</div>
+					<div>&nbsp;&nbsp;tick {cR('=')} 0;</div>
+					<div>&nbsp;&nbsp;{cGR('// Run pygame module until turned off')} </div>
+					<div>&nbsp;&nbsp;{cR('while')} 1:</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;{cGR('// Continue game mode until user loses game')} </div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;{cR('if')} {'Settings.game_active:'}</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{cGR('// Increase tick by 1 every loop ( 1 / 30 seconds )')} </div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tick {cR('+=')} 1;</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{cGR('// Add an Enemy to enemies group every 2 seconds')} </div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{cR('if')} tick {cR('%')} 60:</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;enemies{'.'}{cB('add')}({cB('Enemy')}{'(screen, Settings, 1));'}</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...</div>
+					<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...</div>
+					<br/>
+					<div>{cB('run_game')}(); <span className='blinkTypeSomething'>|</span></div>
 				</div>
 			</div>
 		)
