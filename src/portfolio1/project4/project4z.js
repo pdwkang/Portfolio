@@ -25,11 +25,11 @@ class Project extends Component{
 				game for bonus coins, and animated dragons. </div>
 				<div className='tag-wrapper'>
 					<div className='tag-header'>Technologies used</div>
-					<div className='tags'>JavaScript</div>
 					<div className='tags'>HTML5</div>
 					<div className='tags'>CSS3</div>
-					<div className='tags'>Keyframes Animation</div>
-					<div className='tags'>jQuery</div>
+					<div className='tags'>@keyframes animation</div>
+					<div className='featured tags'>JavaScript</div>
+					<div className='featured tags'>jQuery</div>
 				</div>
 			</div>
 		)

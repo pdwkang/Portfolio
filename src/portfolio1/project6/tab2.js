@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import Tab1Description from './tab1description'
+import Tab2Description from './tab2description'
 
-class Tab1 extends Component{
+class Tab2 extends Component{
 	constructor(props) {
 		super(props);
 		this.onClick = this.onClick.bind(this);	
 
 	}
 	onClick(){
-		this.props.onClick(<Tab1Description />, 'tab1')
+		this.props.onClick(<Tab2Description />, 'tab2')
 	}
 
 	render(){
@@ -16,7 +16,7 @@ class Tab1 extends Component{
 		var borderColor = 'none'
 		var borderBottom = '1px solid white'
 		var tabClass = 'each-tab each-tab-hover'
-		if(this.props.target === 'tab1'){
+		if(this.props.target === 'tab2'){
 			backgroundColor = '#272822'
 			borderColor = 'lightgrey 1px solid'
 			borderBottom = '1px solid #272822'
@@ -24,12 +24,11 @@ class Tab1 extends Component{
 		return(
 			<div onClick={this.onClick} className={tabClass} >
 				<div style={{backgroundColor:backgroundColor, borderLeft: borderColor, borderRight: borderColor, borderTop: borderColor, borderBottom: borderBottom, padding:'3px 10px'}}>
-				Upload.js
+				Upload.html
 				</div>
 			</div>
 		)
 	}
 }
 
-
-export default Tab1
+export default Tab2

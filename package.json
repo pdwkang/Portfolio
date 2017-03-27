@@ -9,11 +9,13 @@
   "dependencies": {
     "email": "^0.2.6",
     "jquery": "^3.1.1",
+    "nuka-carousel": "^2.0.4",
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.7",
     "react-dom": "^15.4.2",
     "react-modal": "^1.6.5",
     "react-pdf": "0.0.10",
+    "react-player": "^0.14.3",
     "react-router": "^3.0.2",
     "react-scroll": "^1.4.5"
   },

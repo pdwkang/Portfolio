@@ -34,49 +34,42 @@ class ProjectTitle2 extends Component{
 	constructor(props) {
 		super(props);
 		this.onClick = this.onClick.bind(this);	
-
 	}
 	onClick(){
 		this.props.onClick(<Portfolio2z />, 'tab2')
 	}
-
 	render(){
 		var selectedTab = 'tab-wrapper'
 		if(this.props.target === 'tab2'){
 			selectedTab = 'selected-tab'
 		}
-
 		return(
 			<div onClick={this.onClick} className={selectedTab}>
 				<div className='tab-triangle'></div>
 				<div className='project-arrow-tab'>Nemo &nbsp;<span className='glyphicon glyphicon-cutlery'></span></div>
-
 			</div>
 		)
 	}
 }
 
+
 class ProjectTitle3 extends Component{
 	constructor(props) {
 		super(props);
 		this.onClick = this.onClick.bind(this);	
-
 	}
 	onClick(){
 		this.props.onClick(<Portfolio3z />, 'tab3')
 	}
-
 	render(){
 		var selectedTab = 'tab-wrapper'
 		if(this.props.target === 'tab3'){
 			selectedTab = 'selected-tab'
 		}
-
 		return(
 			<div onClick={this.onClick} className={selectedTab}>
 				<div className='tab-triangle'></div>
-				<div className='project-arrow-tab'>Movie App &nbsp;<span className='glyphicon glyphicon-film'></span></div>
-
+				<div className='project-arrow-tab'>Movie &nbsp;<span className='glyphicon glyphicon-film'></span></div>
 			</div>
 		)
 	}
@@ -86,23 +79,19 @@ class ProjectTitle4 extends Component{
 	constructor(props) {
 		super(props);
 		this.onClick = this.onClick.bind(this);	
-
 	}
 	onClick(){
 		this.props.onClick(<Portfolio4z />, 'tab4')
 	}
-
 	render(){
 		var selectedTab = 'tab-wrapper'
 		if(this.props.target === 'tab4'){
 			selectedTab = 'selected-tab'
 		}
-
 		return(
 			<div onClick={this.onClick} className={selectedTab}>
 				<div className='tab-triangle'></div>
 				<div className='project-arrow-tab'>Black Jack &nbsp;<span className='glyphicon glyphicon-usd'></span></div>
-
 			</div>
 		)
 	}
@@ -112,18 +101,15 @@ class ProjectTitle5 extends Component{
 	constructor(props) {
 		super(props);
 		this.onClick = this.onClick.bind(this);	
-
 	}
 	onClick(){
 		this.props.onClick(<Portfolio5z />, 'tab5')
 	}
-
 	render(){
 		var selectedTab = 'tab-wrapper'
 		if(this.props.target === 'tab5'){
 			selectedTab = 'selected-tab'
 		}
-
 		return(
 			<div onClick={this.onClick} className={selectedTab}>
 				<div className='tab-triangle'></div>
@@ -133,11 +119,11 @@ class ProjectTitle5 extends Component{
 	}
 }
 
+
 class ProjectTitle6 extends Component{
 	constructor(props) {
 		super(props);
 		this.onClick = this.onClick.bind(this);	
-
 	}
 	onClick(){
 		this.props.onClick(<Portfolio6z />, 'tab6')
@@ -152,8 +138,7 @@ class ProjectTitle6 extends Component{
 		return(
 			<div onClick={this.onClick} className={selectedTab}>
 				<div className='tab-triangle'></div>
-				<div className='project-arrow-tab'>Pygame</div>
-
+				<div className='project-arrow-tab'>Pygame &nbsp;<span className='glyphicon glyphicon-knight'></span></div>
 			</div>
 		)
 	}
@@ -199,11 +184,10 @@ class Portfolio1 extends Component{
 						<br/>
 						<ProjectTitle5 onClick={this.onClick} target={this.state.projectTarget}/>  {/* new story */}
 						<ProjectTitle1 onClick={this.onClick} target={this.state.projectTarget}/>  {/* updated */}
+						<ProjectTitle6 onClick={this.onClick} target={this.state.projectTarget}/>  {/* pygame */}
 						<ProjectTitle4 onClick={this.onClick} target={this.state.projectTarget}/>  {/* blackjack */}
-						<ProjectTitle2 onClick={this.onClick} target={this.state.projectTarget}/>  {/* nemo */}
 						<ProjectTitle3 onClick={this.onClick} target={this.state.projectTarget}/>  {/* movie */}
-						
-						<ProjectTitleComingSoon/>
+						<ProjectTitle2 onClick={this.onClick} target={this.state.projectTarget}/>  {/* nemo */}
 						<ProjectTitleComingSoon/>
 					</div>
 					{this.state.projectDescription}
@@ -220,4 +204,3 @@ class Portfolio1 extends Component{
 
 export default Portfolio1
 
-// <ProjectTitle6 onClick={this.onClick} target={this.state.projectTarget}/>  {/* pygame */}

@@ -23,7 +23,7 @@ class Project extends Component{
 				<div className='project-description'>
 					Web application that allows charity givers, translators, and admins of <a href='https://www.newstorycharity.org/' target='_blank'><u>New Story</u></a> to 
 					view, upload and translate videos. New Story Charity is a nonprofit organization that builds homes and communities for families in need.  
-					The application is designed for internal use only, demo site has <span style={{color:'green'}}>username and password set to <strong>'test' / 'test'</strong>.</span>
+					The application is designed for internal use only, demo site has <span style={{color:'green'}}>username</span> and <span style={{color:'green'}}>password</span> set to <span style={{color:'green'}}>'test'</span> / <span style={{color:'green'}}>'test'</span>
 
 				</div>
 				<div className='tag-wrapper'>
@@ -31,7 +31,7 @@ class Project extends Component{
 					<div className='tags'>HTML5</div>
 					<div className='tags'>{'< video >'}</div>
 					<div className='tags'>CSS3</div>
-					<div className='featured tags'>Sass</div>
+					<div className='tags'>Sass</div>
 					<div className='tags'>JavaScript</div>
 					<div className='tags'>jQuery</div>
 					<div className='featured tags'>Angular 1.5</div>

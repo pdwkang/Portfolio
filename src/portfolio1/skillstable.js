@@ -56,7 +56,7 @@ class SkillsTable extends Component{
 					<div className='each-skill '>Node.js &nbsp; / &nbsp; NPM</div>
 					<div className='each-skill s2'>Express &nbsp; / &nbsp; MySql &nbsp; / &nbsp; REST API </div>
 					<div className='each-skill'>Python</div>
-					<div className='each-skill s2'>AWS</div>
+					<div className='each-skill s2'>AWS &nbsp; / &nbsp; EC2</div>
 					<div className='each-skill'>&nbsp;</div>
 				</div>
 				<div className='in-progress hidden-xs'>

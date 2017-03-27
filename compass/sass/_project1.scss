@@ -140,7 +140,7 @@ $margin-top-headers: 40px;
 
 .tab-wrapper:hover{
 	cursor:pointer;
-	width:125px;
+	width:145px;
 	transition: width .4s;
 
 }
@@ -317,9 +317,7 @@ $project-header-color: #2E3641;
 		position: absolute;
 		width: 130px;
 		height: 13px;
-		// border-left: 3px solid white;
 		border-top:  3px solid white;
-		// border-right:  3px solid white;
 		top:-8px;
 		left:0px;
 		border-radius: $radius2;
@@ -328,8 +326,6 @@ $project-header-color: #2E3641;
 		position: absolute;
 		width: 130px;
 		height: 13px;
-		// border-left: 3px solid white;
-		// border-right: 3px solid white;
 		border-bottom:  3px solid white;
 		bottom:-8px;
 		right:0px;
@@ -338,3 +334,37 @@ $project-header-color: #2E3641;
 	}
 }
 
+
+// news carousel
+.news-wrapper{
+	margin-right: 40px;
+	padding-top:10px;
+	margin-top: 20px;
+	font-family: "Passion One";
+	font-size: 18px;
+	// background-color: rgba(0,0,0,0.2);
+}
+
+
+.each-article-title{
+	font-family: "Libre Franklin";
+	font-size: 15px;
+	a{
+		color:rgb(110,110,250);
+	}
+}
+
+.movie-wrapper{
+	background-color: black;
+	margin-top: 20px;
+	padding-right: 40px;
+	.col-sm-3{
+		.each-movie-poster{
+			img{width:100%}
+		}
+	}
+}
+
+.btn-primary:hover{
+	opacity: 0.8;
+}
