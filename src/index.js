@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import './compassSass.css';
 import NavBar from './navbar.js'
 import Home from './home/home.js'
-import Portfolio1 from './portfolio1/portfolio1.js'
+import Portfolio1 from './portfolio/portfolio1.js'
 import Contact from './contact/contact.js'
 import contactBackground from './contact/bbb.png'
-import SkillsTable from './portfolio1/skillstable.js'
+import SkillsTable from './portfolio/skillstable.js'
 import Modal from 'react-modal';
 
 const customStyles = {
